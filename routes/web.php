@@ -2,8 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\authentification;
-use App\Http\Controllers\ClientController;
-use App\Http\Controllers\Store\AdminStore;
+use App\Http\Controllers\Store\ClientCrudController;
 use App\Http\Controllers\Equipe\admin_equipe_wac;
 
 //accuiel
@@ -21,10 +20,13 @@ Route::get('/', function(){
 //admin_dashbord_store
         // midlleware_admin_store
     Route::middleware(['auth','admin_store'])->group(function () {
-        Route::controller(AdminStore::class)->group(function () {
+        Route::controller(ClientCrudController::class)->group(function () {
             Route::prefix('/admin_store')->group(function(){
                Route::get('/','index')->name('dashbord_admin_store');
-               
+               Route::resource('clients', ClientCrudController::class);
+                Route::delete('/clients/{id}', [ClientCrudController::class, 'destroy'])->name('clients.delete');
+                Route::delete('/clients/{client}', [ClientCrudController::class, 'destroy'])->name('clients.destroy');
+                Route::get('/liste', [ClientCrudController::class, 'index'])->name('clients');
             });
         });
        });
@@ -62,7 +64,7 @@ Route::prefix('/store')->group(function(){
 //admin_dashbord_equiep_rca
  // midlleware_admin_equipe_rca
  Route::middleware('auth')->group(function () {
-    Route::controller(AdminStore::class)->group(function () {
+    Route::controller(ClientCrudController::class)->group(function () {
         Route::prefix('/admin_equipe_rca')->group(function(){
         Route::get('/','index')->name('admin_equipe_rca');
         });
@@ -78,10 +80,7 @@ Route::prefix('/store')->group(function(){
 
 
 
-Route::resource('clients', ClientController::class);
-Route::delete('/clients/{id}', [ClientController::class, 'destroy'])->name('clients.delete');
-Route::delete('/clients/{client}', [ClientController::class, 'destroy'])->name('clients.destroy');
-Route::get('/liste', [ClientController::class, 'index'])->name('clients');
+
 
 
 // Route::middleware('auth')->group(function () {

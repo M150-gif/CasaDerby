@@ -7,7 +7,7 @@ use App\Models\Client;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 
-class AdminStore extends Controller
+class ClientCrudController extends Controller
 {
     public function index()
     {
@@ -43,8 +43,7 @@ class AdminStore extends Controller
             'adresse' => $request->adresse,
         ]);
 
-        return redirect()->route('clients.index')
-                         ->with('success', 'Client updated successfully.');
+        return redirect()->route('clients.index') ->with('success', 'Client updated successfully.');
     }
 
     public function destroy(Client $client)
