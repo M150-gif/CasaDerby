@@ -19,17 +19,12 @@ Route::get('/', function(){
         }])->name('login');
 //admin_dashbord_store
         // midlleware_admin_store
-    Route::middleware(['auth','admin_store'])->group(function () {
-        Route::controller(ClientCrudController::class)->group(function () {
-            Route::prefix('/admin_store')->group(function(){
-               Route::get('/','index')->name('dashbord_admin_store');
-               Route::resource('clients', ClientCrudController::class);
-                Route::delete('/clients/{id}', [ClientCrudController::class, 'destroy'])->name('clients.delete');
-                Route::delete('/clients/{client}', [ClientCrudController::class, 'destroy'])->name('clients.destroy');
-                Route::get('/liste', [ClientCrudController::class, 'index'])->name('clients');
-            });
+        Route::middleware(['auth', 'admin_store'])->prefix('admin_store')->group(function () {
+            Route::get('/', [ClientCrudController::class, 'dashboard'])->name('dashboard_admin_store');
+            Route::resource('clients', ClientCrudController::class)->except(['destroy']);
+            Route::delete('/clients/{client}', [ClientCrudController::class, 'destroy'])->name('clients.destroy');
+            Route::get('/liste', [ClientCrudController::class, 'index'])->name('clients');
         });
-       });
 
 //store(site web)
 Route::prefix('/store')->group(function(){

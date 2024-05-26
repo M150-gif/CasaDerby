@@ -1,18 +1,41 @@
 <?php
+namespace App\Http\Controllers\store;
 
-namespace App\Http\Controllers\Store;
-
-use App\Http\Controllers\Controller;
 use App\Models\Client;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Hash;
+use App\Http\Controllers\Controller;
 
 class ClientCrudController extends Controller
 {
+    public function dashboard()
+    {
+        return view('store.dashbord.layouts.template');
+    }
+
     public function index()
     {
         $clients = Client::all();
         return view('store.dashbord.Client.index', compact('clients'));
+    }
+
+    public function create()
+    {
+        return view('store.dashbord.Client.create');
+    }
+
+    public function store(Request $request)
+    {
+        $request->validate([
+            'nom' => 'required|string|max:255',
+            'prenom' => 'required|string|max:255',
+            'email' => 'required|string|email|max:255|unique:clients',
+            'adresse' => 'required|string|max:255',
+            'password' => 'required|string|min:8|confirmed',
+        ]);
+
+        Client::create($request->all());
+
+        return redirect()->route('clients.index')->with('success_message', 'Client created successfully.');
     }
 
     public function show(Client $client)
@@ -30,25 +53,19 @@ class ClientCrudController extends Controller
         $request->validate([
             'nom' => 'required|string|max:255',
             'prenom' => 'required|string|max:255',
-            'email' => 'required|string|email|max:255|unique:clients,email,' . $client->id,
-            #'password' => 'nullable|string|min:8|confirmed',
+            'email' => 'required|string|email|max:255|unique:clients,email,'.$client->id,
             'adresse' => 'required|string|max:255',
+            'password' => 'nullable|string|min:8|confirmed',
         ]);
 
-        $client->update([
-            'nom' => $request->nom,
-            'prenom' => $request->prenom,
-            'email' => $request->email,
-            #'password' => $request->password ? Hash::make($request->password) : $client->password,
-            'adresse' => $request->adresse,
-        ]);
+        $client->update($request->all());
 
-        return redirect()->route('clients.index') ->with('success', 'Client updated successfully.');
+        return redirect()->route('clients.index')->with('success_message', 'Client updated successfully.');
     }
 
     public function destroy(Client $client)
     {
         $client->delete();
-        return redirect()->route('store.pagesclients.index')->with('success_message', 'Client deleted successfully');
+        return redirect()->route('clients.index')->with('success_message', 'Client deleted successfully.');
     }
 }
