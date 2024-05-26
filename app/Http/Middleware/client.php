@@ -18,7 +18,7 @@ class client
         if(Auth::user()->role==="client"){
             return $next($request);
         }else{
-            return redirect()->route('display_profile');
+            return back();
         }
        
     }

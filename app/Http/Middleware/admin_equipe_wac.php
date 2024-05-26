@@ -19,7 +19,7 @@ class admin_equipe_wac
         if(Auth::user()->role=="admin_equipe_wac"){
             return $next($request);
         }else{
-            return redirect()->route('login');
+            return back();
         }
        
     }

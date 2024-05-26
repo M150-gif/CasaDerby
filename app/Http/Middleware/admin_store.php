@@ -19,7 +19,7 @@ class admin_store
         if(Auth::user()->role=="admin_store"){
             return $next($request);
         }else{
-            return redirect()->route('login');
+            return back();
         }
        
     }
