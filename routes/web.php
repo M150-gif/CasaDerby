@@ -15,18 +15,19 @@ Route::get('/', function(){
     return view('login_admin_page');
     }])->name('login_admin_page');
     Route::post('/admin',[authentification::class,"Login"])->name('login_admin');
-
+    Route::get('/admin',[authentification::class,function(){
+        return view('login_admin_page');
+        }])->name('login_admin_page');
 //admin_dashbord
-    Route::middleware('auth')->group(function () {
-    //   Route::middleware('admin_store')->group(function () {
+    // Route::middleware('auth')->group(function () {
+      Route::middleware('admin_store')->group(function () {
         Route::controller(AdminStore::class)->group(function () {
             Route::prefix('/admin_store')->group(function(){
             Route::get('/','index')->name('dashbord_admin_store');
             });
         });
-    //    });
-       
-});
+       });
+// });
 //store
 Route::prefix('/store')->group(function(){
     Route::get('/', function(){
