@@ -11,13 +11,14 @@ Route::get('/', function(){
     return view('accueil');
 })->name('home');
 //login_admin_page
+Route::middleware('guest')->group(function(){
     Route::get('/admin',[authentification::class,function(){
        return view('login_admin_page');}])->name('login_admin_page');
     Route::post('/admin',[authentification::class,"Login"])->name('login_admin');
-
     Route::get('/admin',[authentification::class,function(){
         return view('login_admin_page');
         }])->name('login');
+    });
 //admin_dashbord_store
         // midlleware_admin_store
     Route::middleware(['auth','admin_store'])->group(function () {

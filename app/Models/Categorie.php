@@ -12,4 +12,3 @@ class Categorie extends Model
         'nom',
     ];
 }
-

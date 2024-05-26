@@ -19,8 +19,7 @@ class guest
         if(!Auth::user()){
             return $next($request);
         }else{
-            return redirect()->route('display_profile');
+            return back();
         }
-       
     }
 }

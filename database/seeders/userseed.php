@@ -46,6 +46,15 @@ class userseed extends Seeder
                 'remember_token' => Str::random(10),
                 'created_at' => now(),
                 'updated_at' => now(),
+            ],[
+                'name' => 'Admin Store',
+                'email' => 'adminstore@example.com',
+                'role' => 'admin_store',
+                'email_verified_at' => now(),
+                'password' => Hash::make('password123'), // Change this to a secure password
+                'remember_token' => Str::random(10),
+                'created_at' => now(),
+                'updated_at' => now(),
             ]
         ]);
     }
