@@ -58,6 +58,7 @@ Route::prefix('/store')->group(function(){
 Route::resource('clients', ClientController::class);
 Route::delete('/clients/{id}', [ClientController::class, 'destroy'])->name('clients.delete');
 Route::delete('/clients/{client}', [ClientController::class, 'destroy'])->name('clients.destroy');
+Route::get('/liste', [ClientController::class, 'index'])->name('clients');
 
 
 // Route::middleware('auth')->group(function () {
@@ -66,3 +67,7 @@ Route::delete('/clients/{client}', [ClientController::class, 'destroy'])->name('
 
 Route::middleware('auth')->group(function(){
 });
+<<<<<<< HEAD
+=======
+Route::view('/', 'dashboard');
+>>>>>>> 582f4ace51d16a9bee0720a9318d3a6de8451ad4
