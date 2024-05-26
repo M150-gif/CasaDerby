@@ -1,0 +1,88 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 10px 20px;
+}
+
+.navbar .title a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.navbar .shop-button a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar .shop-button a:hover {
+    background-color: green;
+}
+
+.images-container {
+    display: flex;
+    justify-content: center;
+}
+
+.images-container a {
+    margin: 20px;
+}
+
+.team-image {
+    width: 500px;  /* Increased width */
+    height: 500px; /* Increased height */
+    border-radius: 50%; /* Circular border */
+    transition: transform 0.3s ease;
+    object-fit: cover;  /* Ensure images fill the area without distortion */
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 0 5px #000;
+}
+
+.team-image:hover {
+    transform: scale(1.05);
+}
+
+.team1-image {
+    animation: neon-red 1.5s infinite;
+    border: 5px solid transparent;
+}
+
+.team2-image {
+    animation: neon-green 1.5s infinite;
+    border: 5px solid transparent;
+}
+
+@keyframes neon-red {
+    0%, 100% {
+        box-shadow: 0 0 5px red, 0 0 10px red, 0 0 15px red, 0 0 20px red;
+    }
+    50% {
+        box-shadow: 0 0 20px red, 0 0 30px red, 0 0 40px red, 0 0 50px red;
+    }
+}
+
+@keyframes neon-green {
+    0%, 100% {
+        box-shadow: 0 0 5px green, 0 0 10px green, 0 0 15px green, 0 0 20px green;
+    }
+    50% {
+        box-shadow: 0 0 20px green, 0 0 30px green, 0 0 40px green, 0 0 50px green;
+    }
+}
