@@ -22,7 +22,7 @@ class Client extends Authenticatable
         'password',
         'adresse',
     ];
-
+    
     /**
      * The attributes that should be hidden for arrays.
      *
