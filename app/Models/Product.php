@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Models\ligne_commande;
 
 class Product extends Model
 {
@@ -18,6 +19,6 @@ class Product extends Model
     }
     public function commandes()
     {
-        return $this->belongsToMany(ligne_commandes::class, 'product_id');
+        return $this->belongsToMany(ligne_commande::class, 'product_id');
     }
 }
