@@ -2,7 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\authentification;
-use App\Http\Controllers\ClientController;
 use App\Http\Controllers\Store\ClientCrudController;
 use App\Http\Controllers\Equipe\admin_equipe_wac;
 
@@ -24,12 +23,11 @@ Route::middleware('guest')->group(function(){
     Route::middleware(['auth','admin_store'])->group(function () {
         Route::controller(ClientCrudController::class)->group(function () {
             Route::prefix('/admin_store')->group(function(){
-                Route::get('/','index')->name('dashbord_admin_store');
-                Route::resource('clients', ClientCrudController::class);
+               Route::get('/','index')->name('dashbord_admin_store');
+               Route::resource('clients', ClientCrudController::class);
                 Route::delete('/clients/{id}', [ClientCrudController::class, 'destroy'])->name('clients.delete');
                 Route::delete('/clients/{client}', [ClientCrudController::class, 'destroy'])->name('clients.destroy');
                 Route::get('/liste', [ClientCrudController::class, 'index'])->name('clients');
-
             });
         });
        });
@@ -72,9 +70,6 @@ Route::prefix('/store')->group(function(){
     });
    });
 //equipe(site web)
-
-
-
 
 
 // Route::middleware('auth')->group(function () {

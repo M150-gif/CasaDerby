@@ -17,30 +17,40 @@ class userseed extends Seeder
     public function run(): void
     {
         DB::table('users')->insert([
+            // [
+            //     'name' => 'Admin Store',
+            //     'email' => 'adminstore@example1.com',
+            //     'role' => 'admin_equipe_rca',
+            //     'email_verified_at' => now(),
+            //     'password' => Hash::make('password1234'), // Change this to a secure password
+            //     'remember_token' => Str::random(10),
+            //     'created_at' => now(),
+            //     'updated_at' => now(),
+            // ],
+            // [
+            //     'name' => 'Admin Store',
+            //     'email' => 'adminstore@example2.com',
+            //     'role' => 'admin_equipe_wac',
+            //     'email_verified_at' => now(),
+            //     'password' => Hash::make('password1235'), // Change this to a secure password
+            //     'remember_token' => Str::random(10),
+            //     'created_at' => now(),
+            //     'updated_at' => now(),
+            // ],
+            // [
+            //     'name' => 'Admin Store',
+            //     'email' => 'adminstore@example3.com',
+            //     'role' => 'client',
+            //     'email_verified_at' => now(),
+            //     'password' => Hash::make('password1236'), // Change this to a secure password
+            //     'remember_token' => Str::random(10),
+            //     'created_at' => now(),
+            //     'updated_at' => now(),
+            // ],
             [
                 'name' => 'Admin Store',
-                'email' => 'adminstore@example1.com',
-                'role' => 'admin_equipe_rca',
-                'email_verified_at' => now(),
-                'password' => Hash::make('password1234'), // Change this to a secure password
-                'remember_token' => Str::random(10),
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
-            [
-                'name' => 'Admin Store',
-                'email' => 'adminstore@example2.com',
-                'role' => 'admin_equipe_wac',
-                'email_verified_at' => now(),
-                'password' => Hash::make('password1235'), // Change this to a secure password
-                'remember_token' => Str::random(10),
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
-            [
-                'name' => 'Admin Store',
-                'email' => 'adminstore@example3.com',
-                'role' => 'client',
+                'email' => 'adminstore@exampl.com',
+                'role' => 'admin_store',
                 'email_verified_at' => now(),
                 'password' => Hash::make('password1236'), // Change this to a secure password
                 'remember_token' => Str::random(10),

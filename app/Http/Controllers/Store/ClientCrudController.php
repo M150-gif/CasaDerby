@@ -43,8 +43,7 @@ class ClientCrudController extends Controller
             'adresse' => $request->adresse,
         ]);
 
-        return redirect()->route('clients.index')
-                         ->with('success', 'Client updated successfully.');
+        return redirect()->route('clients.index') ->with('success', 'Client updated successfully.');
     }
 
     public function destroy(Client $client)
