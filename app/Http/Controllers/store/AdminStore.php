@@ -1,6 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Store;
+
+use App\Http\Controllers\Controller;
 use App\Models\Client;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
@@ -10,17 +12,17 @@ class AdminStore extends Controller
     public function index()
     {
         $clients = Client::all();
-        return view('store.pages.Client.index', compact('clients'));
+        return view('store.dashbord.Client.index', compact('clients'));
     }
 
     public function show(Client $client)
     {
-        return view('store.pages.Client.show', compact('client'));
+        return view('store.dashbord.Client.show', compact('client'));
     }
 
     public function edit(Client $client)
     {
-        return view('store.pages.Client.edit', compact('client'));
+        return view('store.dashbord.Client.edit', compact('client'));
     }
 
     public function update(Request $request, Client $client)

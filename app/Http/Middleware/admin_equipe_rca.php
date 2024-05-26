@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Illuminate\Support\Facades\Auth;
 
-class admin_store
+class admin_equipe_rca
 {
     /**
      * Handle an incoming request.
@@ -16,7 +16,7 @@ class admin_store
      */
     public function handle(Request $request, Closure $next): Response
     {
-        if(Auth::user()->role=="admin_store"){
+        if(Auth::user()->role=="admin_equipe_rca"){
             return $next($request);
         }else{
             return redirect()->route('login');

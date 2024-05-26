@@ -5,9 +5,8 @@ namespace App\Http\Middleware;
 use Closure;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Illuminate\Support\Facades\Auth;
 
-class admin_store
+class client
 {
     /**
      * Handle an incoming request.
@@ -16,10 +15,10 @@ class admin_store
      */
     public function handle(Request $request, Closure $next): Response
     {
-        if(Auth::user()->role=="admin_store"){
+        if(Auth::user()->role==="client"){
             return $next($request);
         }else{
-            return redirect()->route('login');
+            return redirect()->route('display_profile');
         }
        
     }

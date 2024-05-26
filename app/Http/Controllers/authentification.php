@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-class authentification extends Controller
+class authentification
 { public function login(Request $request)
     {
         $request->validate([
@@ -17,7 +17,18 @@ class authentification extends Controller
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
             $user = Auth::user();
-                return redirect()->route('dashbord_admin_store');
+            switch ($user->role) {
+                case 'admin_store':
+                    return redirect('/admin_store'); // Adjust the route name as needed
+                case 'admin_equipe_rca':
+                    return redirect('/admin_equipe_rca'); // Adjust the route name as needed
+                case 'admin_equipe_wac':
+                    return redirect('/admin_equipe_wac'); // Adjust the route name as needed
+                case 'client':
+                    return redirect()->route('client.profile'); // Adjust the route name as needed
+                default:
+                    return redirect()->route('home'); // Fallback route
+            }
         }else {
             return back()->withErrors([
                 'email' => 'Email or password is incorrect.',
