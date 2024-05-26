@@ -9,6 +9,7 @@ use App\Http\Controllers\ClientController;
 Route::resource('clients', ClientController::class);
 Route::delete('/clients/{id}', [ClientController::class, 'destroy'])->name('clients.delete');
 Route::delete('/clients/{client}', [ClientController::class, 'destroy'])->name('clients.destroy');
+Route::get('/liste', [ClientController::class, 'index'])->name('clients');
 
 
 // Route::middleware('auth')->group(function () {
