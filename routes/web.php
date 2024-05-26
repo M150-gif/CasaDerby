@@ -67,7 +67,4 @@ Route::get('/liste', [ClientController::class, 'index'])->name('clients');
 
 Route::middleware('auth')->group(function(){
 });
-<<<<<<< HEAD
-=======
-Route::view('/', 'dashboard');
->>>>>>> 582f4ace51d16a9bee0720a9318d3a6de8451ad4
+
