@@ -40,16 +40,6 @@ class CategorieController extends Controller
         return view('store.categories.edit', compact('category'));
     }
  
-    public function update(Request $request, Categorie $category)
-    {
-        $request->validate([
-            'nom' => 'required|string|max:255',
-        ]);
- 
-        $category->update($request->all());
- 
-        return redirect()->route('categories.index')->with('success_message', 'Category updated successfully.');
-    }
  
     public function destroy(Categorie $category)
     {

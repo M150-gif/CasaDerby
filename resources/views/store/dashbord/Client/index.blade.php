@@ -19,7 +19,7 @@
                         </form>
                     </div><!--//col-->
                     <div class="col-auto">
-                        <select class="form-select w-auto" >
+                        <select class="form-select w-auto">
                             <option selected value="option-1">All</option>
                             <option value="option-2">This week</option>
                             <option value="option-3">This month</option>
@@ -71,11 +71,11 @@
                                         <form method="POST" action="{{ route('clients.destroy', $client->id) }}" onsubmit="return confirm('Are you sure you want to delete this client?')">
                                             @csrf
                                             @method('DELETE')
-                                            <a class="btn-sm app-btn-secondary" href="{{ route('clients.edit', $client->id) }}">Editer</a>
-                                            <button type="submit" class="btn-sm app-btn-secondary" style="margin-right: 5px; border-radius: 0;">Retirer</button>
-                                            <a class="btn-sm app-btn-secondary" href="{{ route('clients.show', $client->id) }}" style="border-radius: 0;">Détails</a>
+                                            <a class="btn btn-warning" href="{{ route('clients.edit', $client->id) }}">Editer</a>
+                                            <button type="submit" class="btn btn-danger" style="margin-right: 5px; border-radius: 0;">Retirer</button>
+                                            <a class="btn btn-info" href="{{ route('clients.show', $client->id) }}" style="border-radius: 0;">Détails</a>
                                         </form>
-                                        
+
 
                                          
                                     </td>
@@ -92,7 +92,7 @@
             </div><!--//app-card-->
 
             <nav class="app-pagination">
-                
+                <!-- Pagination links here -->
             </nav>
         </div><!--//tab-pane-->
     </div><!--//tab-content-->
