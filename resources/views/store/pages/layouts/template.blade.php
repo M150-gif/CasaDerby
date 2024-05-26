@@ -23,8 +23,8 @@
 
 <body class="app">   	
     <header class="app-header fixed-top">	   	            
-          @include('layouts.topbar')        
-          @include('layouts.sidebar')
+          @include('store.pages.layouts.topbar')        
+          @include('store.pages.layouts.sidebar')
 
     
     <div class="app-wrapper">

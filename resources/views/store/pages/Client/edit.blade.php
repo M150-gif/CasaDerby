@@ -1,4 +1,4 @@
-@extends('layouts.template')
+@extends('store.pages.layouts.template')
 
 @section('content')
 <h1 class="app-page-title">Clients</h1>

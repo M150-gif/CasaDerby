@@ -11,17 +11,17 @@ class ClientController extends Controller
     public function index()
     {
         $clients = Client::all();
-        return view('Client.index', compact('clients'));
+        return view('store.pages.Client.index', compact('clients'));
     }
 
     public function show(Client $client)
     {
-        return view('Client.show', compact('client'));
+        return view('store.pages.Client.show', compact('client'));
     }
 
     public function edit(Client $client)
     {
-        return view('Client.edit', compact('client'));
+        return view('store.pages.Client.edit', compact('client'));
     }
 
     public function update(Request $request, Client $client)
@@ -49,6 +49,6 @@ class ClientController extends Controller
     public function destroy(Client $client)
     {
         $client->delete();
-        return redirect()->route('clients.index')->with('success_message', 'Client deleted successfully');
+        return redirect()->route('store.pagesclients.index')->with('success_message', 'Client deleted successfully');
     }
 }

@@ -1,4 +1,4 @@
-@extends('layouts.template')
+@extends('store.pages.layouts.template')
 
 @section('content')
     <div class="row g-3 mb-4 align-items-center justify-content-between">
