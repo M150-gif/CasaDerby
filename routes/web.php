@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\authentification;
 use App\Http\Controllers\Store\ClientCrudController;
 use App\Http\Controllers\Equipe\admin_equipe_wac;
+use App\Http\Controllers\Store\CategorieController;
 
 //accuiel
 Route::get('/', function(){
@@ -25,6 +26,25 @@ Route::get('/', function(){
             Route::delete('/clients/{client}', [ClientCrudController::class, 'destroy'])->name('clients.destroy');
             Route::get('/liste', [ClientCrudController::class, 'index'])->name('clients');
         });
+
+//Category
+
+Route::middleware(['auth', 'admin_store'])->prefix('admin_store')->group(function () {
+    // Index
+    Route::get('/categories', [CategorieController::class, 'index'])->name('categories.index');
+    
+    // Create
+    Route::get('/categories/create', [CategorieController::class, 'create'])->name('categories.create');
+    Route::post('/categories', [CategorieController::class, 'store'])->name('categories.store');
+    
+    // Show
+    Route::get('/categories/{categorie}', [CategorieController::class, 'show'])->name('categories.show');
+
+    // Delete
+    Route::delete('/categories/{categorie}', [CategorieController::class, 'destroy'])->name('categories.destroy');
+});
+
+
 
 //store(site web)
 Route::prefix('/store')->group(function(){
