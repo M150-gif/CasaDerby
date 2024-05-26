@@ -3,15 +3,17 @@
 namespace App\Http\Controllers\Product;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Product;
 
-class product extends Controller
+class Product_controller extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function afiicher_product()
     {
-        
+        $products=Product::all();
+        return view('',compact('products'));
     }
 
     /**

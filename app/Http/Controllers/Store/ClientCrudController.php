@@ -7,7 +7,7 @@ use App\Models\Client;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 
-class AdminStore extends Controller
+class ClientCrudController extends Controller
 {
     public function index()
     {
