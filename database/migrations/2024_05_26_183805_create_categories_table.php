@@ -18,7 +18,6 @@ public function up()
         $table->timestamps();
     });
 }
-
 public function down()
 {
     Schema::dropIfExists('categories');

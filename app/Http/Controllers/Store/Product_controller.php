@@ -13,7 +13,7 @@ class Product_controller extends Controller
     public function afiicher_product()
     {
         $products=Product::all();
-        return view('',compact('products'));
+        return view('store.dashbord.Products.index',compact('products'));
     }
 
     /**
@@ -21,7 +21,7 @@ class Product_controller extends Controller
      */
     public function create()
     {
-        //
+        
     }
 
     /**
