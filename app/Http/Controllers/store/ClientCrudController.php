@@ -18,11 +18,6 @@ class ClientCrudController extends Controller
         return view('store.dashbord.Client.index', compact('clients'));
     }
 
-    public function create()
-    {
-        return view('store.dashbord.Client.create');
-    }
-
     public function store(Request $request)
     {
         $request->validate([
