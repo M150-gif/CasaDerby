@@ -48,6 +48,7 @@ class userseed extends Seeder
             // ],
             [
                 'name' => 'Admin Store',
+                'last name' =>'Store',
                 'email' => 'adminstore@exampl.com',
                 'role' => 'admin_store',
                 'email_verified_at' => now(),

@@ -2,6 +2,8 @@
 namespace App\Http\Controllers\store;
 
 use App\Models\Client;
+use App\Models\Commande;
+use App\Models\Product;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -9,7 +11,10 @@ class ClientCrudController extends Controller
 {
     public function dashboard()
     {
-        return view('store.dashbord.dashboard');
+        $commandeCount = Commande::count();
+        $clientCount = Client::count();
+        $productsCount = Product::count();
+        return view('store.dashbord.dashboard',compact('clientCount','productsCount','commandeCount'));
     }
 
     public function index()

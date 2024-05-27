@@ -11,10 +11,13 @@ class Product_dashbord_controller extends Controller
     /**
      * Display a listing of the resource.
      */
+    public function dashboard(){
+        return view('store.dashbord.dashboard',compact('productsCount'));
+    }
     public function index()
     {
-        $Products=Product::all();
-        return view('store.dashbord.Products.index',compact('Products'));
+        $Products = Product::all();
+        return view('store.dashbord.Products.index',compact('Products',));
     }
 
     /**
