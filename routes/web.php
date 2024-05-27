@@ -4,13 +4,17 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\authentification;
 use App\Http\Controllers\Store\ClientCrudController;
 use App\Http\Controllers\Equipe\admin_equipe_wac;
+use App\Http\Controllers\Store\Admin_store;
+use App\Http\Controllers\Store\Product_dashbord_controller;
 use App\Http\Controllers\Store\CategorieController;
+use App\Http\Controllers\Store\Commandes_dashbord_controller;
+use App\Models\Product;
 
 //accuiel
 Route::get('/', function(){
     return view('accueil');
 })->name('home');
-//login_admin_page
+//login_admins
 Route::middleware('guest')->group(function(){
     Route::get('/admin',[authentification::class,function(){
        return view('login_admin_page');}])->name('login_admin_page');
@@ -19,17 +23,30 @@ Route::middleware('guest')->group(function(){
         return view('login_admin_page');
         }])->name('login');
     });
+//logout_admins
+Route::middleware(['auth','admins_logout'])->group(function () {
+    Route::get('/logout_admins',[authentification::class,'logout_admins'])->name('logout_admins');
+});
 //admin_dashbord_store
         // midlleware_admin_store
     Route::middleware(['auth','admin_store'])->group(function () {
-        Route::controller(ClientCrudController::class)->group(function () {
-            Route::prefix('/admin_store')->group(function(){
+
+        Route::prefix('/admin_store')->group(function(){
+            //crud_clients
+            Route::controller(ClientCrudController::class)->group(function () {
                Route::get('/','index')->name('dashbord_admin_store');
                Route::resource('clients', ClientCrudController::class);
                 Route::delete('/clients/{id}', [ClientCrudController::class, 'destroy'])->name('clients.delete');
                 Route::delete('/clients/{client}', [ClientCrudController::class, 'destroy'])->name('clients.destroy');
                 Route::get('/liste', [ClientCrudController::class, 'index'])->name('clients');
             });
+            //crud_product
+            Route::resource('products',Product_dashbord_controller::class);
+            //crud_commande
+            Route::resource('commandes',Commandes_dashbord_controller::class);
+            //profile_admin_crud
+            Route::resource('profile',Admin_store::class);
+            Route::post('/profile/password', [Admin_store::class, 'updatePassword'])->name('profile.updatePassword');
         });
        });
 
@@ -82,7 +99,7 @@ Route::prefix('/store')->group(function(){
 });
 //admin_dashbord_equiep_rca
  // midlleware_admin_equipe_rca
- Route::middleware('auth')->group(function () {
+ Route::middleware(['auth','admin_equipe_rca'])->group(function () {
     Route::controller(ClientCrudController::class)->group(function () {
         Route::prefix('/admin_equipe_rca')->group(function(){
         Route::get('/','index')->name('admin_equipe_rca');
@@ -90,8 +107,6 @@ Route::prefix('/store')->group(function(){
     });
    });
 //equipe(site web)
-
-
 // Route::middleware('auth')->group(function () {
 
 // });

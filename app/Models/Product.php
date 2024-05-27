@@ -5,12 +5,14 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\ligne_commande;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Product extends Model
 {
     use HasFactory;
+    use SoftDeletes;
     protected $fillable = [
-        'nom', 'quantite', 'prix','description'
+        'nom', 'quantite', 'prix','description','categorie_id'
     ];
 
     public function categorie()
@@ -21,4 +23,6 @@ class Product extends Model
     {
         return $this->belongsToMany(ligne_commande::class, 'product_id');
     }
+    protected $dates = ['deleted_at'];
+
 }

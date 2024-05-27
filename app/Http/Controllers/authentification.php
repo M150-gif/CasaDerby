@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Session;
+
 class authentification
 { public function login(Request $request)
     {
@@ -34,5 +36,9 @@ class authentification
                 'email' => 'Email or password is incorrect.',
             ])->onlyInput('email');
         }}
-
+        public function logout_admins(){
+            Session::flush();
+            Auth::logout();
+            return to_route('login');
+        }
     }

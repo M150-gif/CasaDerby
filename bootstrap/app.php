@@ -17,6 +17,7 @@ return Application::configure(basePath: dirname(__DIR__))
             "admin_store"=>\App\Http\Middleware\admin_store::class,
             "client"=>\App\Http\Middleware\client::class,
             "guest"=>\App\Http\Middleware\guest::class,
+            "admins_logout"=>\App\Http\Middleware\admins_logout::class
         ]);
     })
     ->withExceptions(function (Exceptions $exceptions) {

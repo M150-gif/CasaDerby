@@ -16,7 +16,7 @@ class ajouter_products extends Seeder
     {
         DB::table('Products')->insert([
             [
-                'nom' => 'Product 1',
+                'nom' => 'jacket',
                 'quantite' => 10,
                 'description' => Str::random(100),
                 'prix' => 19.99,

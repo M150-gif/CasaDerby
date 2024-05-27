@@ -18,7 +18,7 @@ return new class extends Migration
             $table->text('description');
             $table->decimal('prix', 8, 2);
             $table->unsignedBigInteger('categorie_id');
-            $table->foreign('categorie_id')->references('ID_categorie')->on('categories');
+            $table->foreign('categorie_id')->references('id')->on('categories'); // This should reference 'id' in 'categories'
             $table->timestamps();
         });
     }

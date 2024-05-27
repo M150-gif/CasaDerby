@@ -6,7 +6,7 @@
     <div class="alert alert-success my-2">{{ session('success') }}</div>
     @endif
     <div class="col-auto">
-        <h1 class="app-page-title mb-0">Products</h1>
+        <h1 class="app-page-title mb-0">Commandes</h1>
     </div>
     <div class="col-auto">
         <div class="page-utilities">
@@ -14,7 +14,7 @@
                 <div class="col-auto">
                     <form class="table-search-form row gx-1 align-items-center">
                         <div class="col-auto">
-                            <input type="text" id="search-Products" name="searchProducts" class="form-control search-Products" placeholder="Search">
+                            <input type="text" id="search-Commandes" name="searchCommandes" class="form-control search-Commandes" placeholder="Search">
                         </div>
                         <div class="col-auto">
                             <button type="submit" class="btn app-btn-secondary">Search</button>
@@ -30,7 +30,7 @@
                     </select>
                 </div>
                 <div class="col-auto">
-                    <a class="btn app-btn-secondary" href="{{ route('products.create') }}">
+                    <a class="btn app-btn-secondary" href="{{ route('Commandes.create') }}">
                         Ajouter Porduct
                     </a>
 
@@ -45,9 +45,9 @@
 </div><!--//row-->
 
 
-<div class="tab-content" id="Products-table-tab-content">
-    <div class="tab-pane fade show active" id="Products-all" role="tabpanel" aria-labelledby="Products-all-tab">
-        <div class="app-card app-card-Products-table shadow-sm mb-5">
+<div class="tab-content" id="Commandes-table-tab-content">
+    <div class="tab-pane fade show active" id="Commandes-all" role="tabpanel" aria-labelledby="Commandes-all-tab">
+        <div class="app-card app-card-Commandes-table shadow-sm mb-5">
             <div class="app-card-body">
                 <div class="table-responsive">
                     <table class="table app-table-hover mb-0 text-left">
@@ -62,25 +62,25 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @forelse ($Products as $Product)
+                            @forelse ($Commandes as $Commande)
                             <tr>
-                                <td class="cell">{{ $Product->id }}</td>
-                                <td class="cell">{{ $Product->nom }}</td>
-                                <td class="cell">{{ $Product->quantite }}</td>
-                                <td class="cell">{{ $Product->prix }}</td>
-                                <td class="cell">{{ $Product->description }}</td>
+                                <td class="cell">{{ $Commande->id }}</td>
+                                <td class="cell">{{ $Commande->nom }}</td>
+                                <td class="cell">{{ $Commande->quantite }}</td>
+                                <td class="cell">{{ $Commande->prix }}</td>
+                                <td class="cell">{{ $Commande->description }}</td>
                                 <td class="cell">
                                         
-                                        <form method="GET" action="{{ route('products.edit', $Product->id) }}">
+                                        <form method="GET" action="{{ route('Commandes.edit', $Commande->id) }}">
                                         @csrf  
                                         <button type="submit" class="btn-sm app-btn-secondary" style="margin-right: 5px; border-radius: 0;">Editer</button>
                                         </form>
-                                        <form method="POST" action="{{ route('products.destroy', $Product->id) }}" onsubmit="return confirm('Are you sure you want to delete this Product?')">
+                                        <form method="POST" action="{{ route('Commandes.destroy', $Commande->id) }}" onsubmit="return confirm('Are you sure you want to delete this Commande?')">
                                         @csrf   
                                         @method('DELETE') 
                                         <button type="submit" class="btn-sm app-btn-secondary" style="margin-right: 5px; border-radius: 0;">Retirer</button>
                                         </form>
-                                        <form method="GET" action="{{ route('products.show', $Product->id) }}">
+                                        <form method="GET" action="{{ route('Commandes.show', $Commande->id) }}">
                                         @csrf   
                                         <button type="submit" class="btn-sm app-btn-secondary" style="margin-right: 5px; border-radius: 0;">Details</button>
                                         </form>
@@ -88,7 +88,7 @@
                             </tr>
                             @empty
                             <tr>
-                                <td class="cell" colspan="5">Aucun Product ajouté</td>
+                                <td class="cell" colspan="5">Aucun Commande ajouté</td>
                             </tr>
                             @endforelse
                         </tbody>

@@ -13,11 +13,11 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        $this->call([
-            category_mostapha::class,
-        ]);
         // $this->call([
-        //     userseed::class,
+        //     ajouter_products::class,
         // ]);
+        $this->call([
+            userseed::class,
+        ]);
     }
 }
