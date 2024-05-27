@@ -12,7 +12,6 @@
 <link href="{{asset('store/site_web/css/style.css')}}" rel="stylesheet">
 <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 <link rel="icon" href="images/favicon.png" type="image/x-icon">
-
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -47,7 +46,7 @@
             <div class="header-content">
                 <div class="logo">
                     <a href="index.html" title="">
-                        <img src="{{asset('images/logo.png')}}" alt="" /> 
+                        CasaDerby
                     </a>
                 </div>
                 <div class="header-social">

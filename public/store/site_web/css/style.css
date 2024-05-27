@@ -1556,9 +1556,10 @@ header {
   left: 0;
   width: 100%;
   z-index: 99;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: black;
   height: 78px;
   line-height: 78px;
+  color: white;
 }
 header.sticky {
   position: fixed;
