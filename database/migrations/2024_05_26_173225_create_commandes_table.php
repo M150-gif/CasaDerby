@@ -17,6 +17,8 @@ public function up()
         $table->unsignedBigInteger('client_id');
         $table->foreign('client_id')->references('id')->on('clients'); 
         $table->date('date_cmd');
+        $table->boolean('livraison')->default(false);
+        $table->integer('totale_product');
         $table->decimal('montant_totale', 8, 2);
         $table->timestamps();
     });

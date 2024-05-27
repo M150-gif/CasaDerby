@@ -29,12 +29,6 @@
                         <option value="option-4">Last 3 months</option>
                     </select>
                 </div>
-                <div class="col-auto">
-                    <a class="btn app-btn-secondary" href="{{ route('Commandes.create') }}">
-                        Ajouter Porduct
-                    </a>
-
-                </div>
             </div><!--//row-->
 
         </div><!--//table-utilities-->
@@ -55,7 +49,7 @@
                             <tr>
                                 <th class="cell">#</th>
                                 <th class="cell">Nom</th>
-                                <th class="cell">quantite</th>
+                                <th class="cell">date</th>
                                 <th class="cell">prix</th>
                                 <th class="cell">description</th>
                                 <th class="cell">action</th>

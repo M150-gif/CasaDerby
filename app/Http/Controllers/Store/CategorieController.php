@@ -11,12 +11,12 @@ class CategorieController extends Controller
     public function index()
     {
         $categories = Categorie::all();
-        return view('store.categories.index', compact('categories'));
+        return view('store.dashbord.categories.index', compact('categories'));
     }
  
     public function create()
     {
-        return view('store.categories.create');
+        return view('store.dashbord.categories.create');
     }
  
     public function store(Request $request)
@@ -32,12 +32,12 @@ class CategorieController extends Controller
  
     public function show(Categorie $category)
     {
-        return view('store.categories.show', compact('category'));
+        return view('store.dashbord.categories.show', compact('category'));
     }
  
     public function edit(Categorie $category)
     {
-        return view('store.categories.edit', compact('category'));
+        return view('store.dashbord.categories.edit', compact('category'));
     }
  
  
