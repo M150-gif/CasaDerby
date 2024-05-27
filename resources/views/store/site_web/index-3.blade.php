@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Glance |  HTML Template | Home Page 01</title>
+<title>CasaDerby |  Home Page 01</title>
 <!-- Stylesheets -->
 <link href="css/all.min.css" rel="stylesheet">
 <link href="css/bootstrap.min.css" rel="stylesheet">

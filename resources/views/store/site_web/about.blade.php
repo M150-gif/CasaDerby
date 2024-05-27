@@ -2,17 +2,17 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Glance |  HTML Template | Home Page 01</title>
+<title>CasaDerby |  Home Page 01</title>
 <!-- Stylesheets -->
-<link href="css/all.min.css" rel="stylesheet">
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="css/slick.css" rel="stylesheet">
-<link href="css/slick-theme.css" rel="stylesheet">
-<link href="css/swiper-bundle.min.css" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet">
+<link href="{{ asset('css/all.min.css') }}" rel="stylesheet">
+<link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+<link href="{{ asset('css/slick.css') }}" rel="stylesheet">
+<link href="{{ asset('css/slick-theme.css') }}" rel="stylesheet">
+<link href="{{ asset('css/swiper-bundle.min.css') }}" rel="stylesheet">
+<link href="{{ asset('css/style.css') }}" rel="stylesheet">
 
-<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-<link rel="icon" href="images/favicon.png" type="image/x-icon">
+<link rel="shortcut icon" href="{{ asset('images/favicon.png') }}" type="image/x-icon">
+<link rel="icon" href="{{ asset('images/favicon.png') }}" type="image/x-icon">
 
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -46,7 +46,7 @@
             <div class="header-content">
                 <div class="logo">
                     <a href="index.html" title="">
-                        <img src="images/logo.png" alt="" /> 
+                        <img src="{{ asset('images/logo.png') }}""" alt="" /> 
                     </a>
                 </div>
                 <div class="header-social">
@@ -64,17 +64,17 @@
                 <ul class="menu-other-links">
                     <li>
                         <a href="#" title="" class="search-btn">
-                            <img src="images/search.png" alt="" />
+                            <img src="{{ asset('images/search.png') }}""" alt="" />
                         </a>
                     </li>
                     <li>
                         <a href="#" title="" class="cart-btn">
-                            <img src="images/cart.png" alt="" /> 
+                            <img src="{{ asset('images/cart.png') }}""" alt="" /> 
                             <span class="cart-number">5</span>
                         </a>
                     </li>
                     <li>
-                        <a href="login.html" title=""><img src="images/user.svg" alt="" /></a>
+                        <a href="login.html" title=""><img src="{{ asset('images/user.svg') }}""" alt="" /></a>
                     </li>
                 </ul>
                 <div class="menu">
@@ -288,7 +288,7 @@
             </ul>
         </div>
     </div><!--cart-sidebar-->
-
+    
     <div class="search-box">
         <div class="search-box-content">
             <form>
@@ -368,192 +368,140 @@
     <section class="page-banner">
         <div class="container">
             <div class="page-banner-content text-center">
-                <h2 class="page-title">My Account</h2>
+                <h2 class="page-title">About us</h2>
                 <p>Porem ipsum dolor sit amet consectetur </p>
             </div>
         </div>
     </section><!--page-banner-->
-
-    <section class="account-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5">
-                    <div class="account-sidebar">
-                        <div class="account-user">
-                            <div class="account-user-img">
-                                <img src="https://placehold.co/174x174" alt="" />
-                                <a href="#" title="" class="edit"><img src="images/pencil.png" alt="" /></a>
-                            </div>
-                            <div class="account-user-info">
-                                <h3>Arbaz Ali</h3>
-                                <span>arbazali@support.com</span>
-                            </div>
-                        </div><!--account user end-->
-                        <ul class="account-list">
-                            <li>
-                                <div class="ac-icon">
-                                    <img src="images/ac1.png" alt="" />
-                                </div>
-                                <h4><a href="#" title="">Profile Information</a></h4>
-                            </li>
-                            <li>
-                                <div class="ac-icon">
-                                    <img src="images/ac2.png" alt="" />
-                                </div>
-                                <h4><a href="#" title="">Manage Address</a></h4>
-                            </li>
-                            <li>
-                                <div class="ac-icon">
-                                    <img src="images/ac3.png" alt="" />
-                                </div>
-                                <h4><a href="#" title="">Gift Cards</a></h4>
-                            </li>
-                            <li>
-                                <div class="ac-icon">
-                                    <img src="images/ac4.png" alt="" />
-                                </div>
-                                <h4><a href="#" title="">Save Card</a></h4>
-                            </li>
-                            <li>
-                                <div class="ac-icon">
-                                    <img src="images/ac5.png" alt="" />
-                                </div>
-                                <h4><a href="#" title="">All Reviews & Rating</a></h4>
-                            </li>
-                            <li>
-                                <div class="ac-icon">
-                                    <img src="images/ac6.png" alt="" />
-                                </div>
-                                <h4><a href="#" title="">My Wishlist</a></h4>
-                            </li>
-                            <li>
-                                <div class="ac-icon">
-                                    <img src="images/ac7.png" alt="" />
-                                </div>
-                                <h4><a href="#" title="">Logout</a></h4>
-                            </li>
-                        </ul>
-                    </div><!--account-sidebar end-->
+   
+    <section class="page-content">
+        <div class="container-fluid">
+            <div class="row align-items-end about-top">
+                <div class="col-lg-6 text-column">
+                    <h2><span>GLANCE</span> Themes are compatible</h2>
                 </div>
+                <div class="col-lg-6 text-para">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus leo sit amet lorem egestas iaculis. Donec nibh enim, pharetra vel turpis non, vulputate luctus ex. Phasellus pharetra ut dolor ac rutrum. Curabitur molestie nec mi in congue. Nam luctus ante quis urna molestie, ut venenatis diam sagittis. Nam ligula velit, </p>
+                </div>
+            </div>
+            <div class="full-image">
+                <img src="https://placehold.co/1704x670" alt="" />
+            </div>
+            <div class="row images-row">
                 <div class="col-lg-7">
-                    <div class="personal-information-column">
-                        <div class="personal-information">
-                            <h3>personal information</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus leo sit amet lorem egestas iaculis. Donec nibh enim, pharetra vel turpis non, vulputate luctus ex. Phasellus pharetra ut dolor</p>
-                        </div>
-                        <div class="row user-details">
-                            <div class="col-lg-6">
-                                <div class="user_info">
-                                    <h4>First Name</h4>
-                                    <span>Arbaz</span>
-                                    <div class="us-icon">
-                                        <img src="images/us1.png" alt="" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="user_info">
-                                    <h4>last Name</h4>
-                                    <span>Ali</span>
-                                    <div class="us-icon">
-                                        <img src="images/us1.png" alt="" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="user_info">
-                                    <h4>Email ID</h4>
-                                    <span>arbaz@support.com</span>
-                                    <div class="us-icon">
-                                        <img src="images/us2.png" alt="" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="user_info">
-                                    <h4>Contact number</h4>
-                                    <span>+91 123 456 789</span>
-                                    <div class="us-icon">
-                                        <img src="images/us3.png" alt="" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="user_info">
-                                    <h4>Address</h4>
-                                    <span>MIG 153 Ram Nagar</span>
-                                    <div class="us-icon">
-                                        <img src="images/us4.png" alt="" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="user_info">
-                                    <h4>City</h4>
-                                    <span>Dewas</span>
-                                    <div class="us-icon">
-                                        <img src="images/us4.png" alt="" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="user_info">
-                                    <h4>State</h4>
-                                    <span>Madhya Pradesh</span>
-                                    <div class="us-icon">
-                                        <img src="images/us4.png" alt="" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="user_info">
-                                    <h4>Zip Code</h4>
-                                    <span>4550011</span>
-                                    <div class="us-icon">
-                                        <img src="images/us5.png" alt="" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="user_info">
-                                    <h4>Country</h4>
-                                    <span>India</span>
-                                    <div class="us-icon">
-                                        <img src="images/us6.png" alt="" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="user_info">
-                                    <h4>Password</h4>
-                                    <span>***************</span>
-                                    <div class="us-icon">
-                                        <img src="images/us7.png" alt="" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="full-button">
-                                    <a href="#" title="" class="theme-btn v2 w-100 text-center">save</a>
-                                </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-4 image-column">
+                            <div class="image">
+                                <img src="https://placehold.co/330x520" alt="" />
                             </div>
                         </div>
-                    </div><!--personal-information-column-->
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-4 image-column">
+                            <div class="image">
+                                <img src="https://placehold.co/330x520" alt="" />
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-4 image-column">
+                            <div class="image">
+                                <img src="https://placehold.co/330x520" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 title-column">
+                    <div class="inner-column">
+                        <h2><span>GLANCE</span> Themes are compatible with major plugins and much more!</h2>
+                        <p>Donec ullamcorper, dolor a suscipit pellentesque, justo mi facilisis quam, a ornare justo risus et felis. Morbi bibendum dapibus dapibus. Morbi euismod, leo sed</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-bottom">
+                <h2>GLANCE Themes are compatible with major plugins and much more!</h2>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae eros venenatis tellus faucibus tincidunt. Pellentesque in neque magna. Integer placerat purus nec rhoncus convallis. Nam et sodales mauris. Nulla gravida justo tellus, ac faucibus dui placerat quis. Donec cursus a lacus id dictum. Nulla eget tincidunt ligula, eget vulputate elit. Morbi hendrerit, orci at dapibus auctor, nunc lacus pretium velit, eu condimentum odio risus non magna. Duis sit amet nisi odio. Vivamus non facilisis sapien. </p>
+                    </div>
+                    <div class="col-lg-6">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae eros venenatis tellus faucibus tincidunt. Pellentesque in neque magna. Integer placerat purus nec rhoncus convallis. Nam et sodales mauris. Nulla gravida justo tellus, ac faucibus dui placerat quis. Donec cursus a lacus id dictum. Nulla eget tincidunt ligula, eget vulputate elit. Morbi hendrerit, orci at dapibus auctor, nunc lacus pretium velit, eu condimentum odio risus non magna. Duis sit amet nisi odio. Vivamus non facilisis sapien. </p>
+                    </div>
                 </div>
             </div>
         </div>
-    </section><!--account-section-->
+    </section><!--page-content-->
+
+    <section class="team-section-page">
+        <div class="container">
+            <div class="sec-title">
+                <h2>Glance team</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus leo sit amet lorem egestas iaculis. Donec nibh enim, pharetra vel turpis</p>
+            </div><!--sec-title-->
+            <div class="row teams">
+                <div class="col-lg-2 team-column">
+                    <div class="inner-column">
+                        <div class="team-img-v2">
+                            <img src="https://placehold.co/334x306" alt="" />
+                        </div>
+                        <div class="team-info-v2">
+                            <h3>Arbaz Ali</h3>
+                            <span>Founder & CEO</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 team-column">
+                    <div class="inner-column">
+                        <div class="team-img-v2">
+                            <img src="https://placehold.co/334x306" alt="" />
+                        </div>
+                        <div class="team-info-v2">
+                            <h3>Rohit</h3>
+                            <span>Founder & CEO</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 team-column">
+                    <div class="inner-column">
+                        <div class="team-img-v2">
+                            <img src="https://placehold.co/334x306" alt="" />
+                        </div>
+                        <div class="team-info-v2">
+                            <h3>Danish</h3>
+                            <span>Founder & CEO</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 team-column">
+                    <div class="inner-column">
+                        <div class="team-img-v2">
+                            <img src="https://placehold.co/334x306" alt="" />
+                        </div>
+                        <div class="team-info-v2">
+                            <h3>Rajendra</h3>
+                            <span>Founder & CEO</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 team-column">
+                    <div class="inner-column">
+                        <div class="team-img-v2">
+                            <img src="https://placehold.co/334x306" alt="" />
+                        </div>
+                        <div class="team-info-v2">
+                            <h3>Arbaz Ali</h3>
+                            <span>Founder & CEO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!--team-section-->
 
     <section class="marquee-section bt-0 pb-0">
-        <div class='marquee' style="margin-top:-value" data-duration='17000' data-gap='10' data-duplicated='true' >
+        <div class='marquee' data-duration='17000' data-gap='10' data-duplicated='true' >
             <h2>The best fashion store can deliver</h2>
         </div>
         <div class='marquee2' data-duration='17000' data-gap='37' data-duplicated='true' >
             <h2>The best fashion store can deliver</h2>
         </div>
     </section>
-
-   
 
     <footer>
         <div class="main-footer">
@@ -613,18 +561,19 @@
 <!-- Scroll To Top -->
 <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
 
-<script src="js/jquery.js"></script> 
-<script src="js/jquery-migrate-1.4.1.min.js"></script>
-<script src="js/slick.min.js"></script>
-<script src="js/slick-animation.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.fancybox.js"></script>
-<script src="js/wow.js"></script>
-<script src="js/appear.js"></script>
-<script src="js/swiper-bundle.min.js"></script>
-<script src="js/jquery.marquee.min.js"></script>
-<script src="js/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
-<script src="js/script.js"></script>
+<script src="{{ asset('js/jquery.js') }}"></script> 
+<script src="{{ asset('js/jquery-migrate-1.4.1.min.js') }}"></script>
+<script src="{{ asset('js/slick.min.js') }}"></script>
+<script src="{{ asset('js/slick-animation.min.js') }}"></script>
+<script src="{{ asset('js/popper.min.js') }}"></script>
+<script src="{{ asset('js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('js/jquery.fancybox.js') }}"></script>
+<script src="{{ asset('js/wow.js') }}"></script>
+<script src="{{ asset('js/appear.js') }}"></script>
+<script src="{{ asset('js/swiper-bundle.min.js') }}"></script>
+<script src="{{ asset('js/jquery.marquee.min.js') }}"></script>
+<script src="{{ asset('js/masonry.pkgd.min.js') }}" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+<script src="{{ asset('js/script.js') }}"></script>
+
 </body>
 </html>
