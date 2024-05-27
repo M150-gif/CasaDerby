@@ -8,7 +8,6 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
 use App\Models\User;
-
 class userseed extends Seeder
 {
     /**
@@ -52,7 +51,7 @@ class userseed extends Seeder
                 'email' => 'adminstore@exampl.com',
                 'role' => 'admin_store',
                 'email_verified_at' => now(),
-                'password' => Hash::make('password1236'), // Change this to a secure password
+                'password' => Hash::make('password1236f'), // Change this to a secure password
                 'remember_token' => Str::random(10),
                 'created_at' => now(),
                 'updated_at' => now(),

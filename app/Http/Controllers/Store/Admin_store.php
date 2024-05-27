@@ -7,7 +7,6 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Storage;
-
 class Admin_store extends Controller
 {
     /**
@@ -73,7 +72,7 @@ class Admin_store extends Controller
     {
         $request->validate([
             'currentPassword' => 'required|string',
-            'newPassword' => 'required|string|min:8|confirmed',
+            'newPassword' => 'required|string|min:8'
         ]);
 
         $user = Auth::User();
@@ -83,7 +82,7 @@ class Admin_store extends Controller
         }
 
         $user->password = bcrypt($request->input('newPassword'));
-        // $user->save();
+        $user->save();
         return back()->with('success', 'Password updated successfully');
     }
     /**

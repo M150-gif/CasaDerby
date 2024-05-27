@@ -34,7 +34,7 @@ Route::middleware(['auth','admins_logout'])->group(function () {
         Route::prefix('/admin_store')->group(function(){
             //crud_clients
             Route::controller(ClientCrudController::class)->group(function () {
-               Route::get('/','index')->name('dashbord_admin_store');
+               Route::get('/','dashboard')->name('dashbord_admin_store');
                Route::resource('clients', ClientCrudController::class);
                 Route::delete('/clients/{id}', [ClientCrudController::class, 'destroy'])->name('clients.delete');
                 Route::delete('/clients/{client}', [ClientCrudController::class, 'destroy'])->name('clients.destroy');

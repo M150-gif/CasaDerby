@@ -9,7 +9,7 @@ class ClientCrudController extends Controller
 {
     public function dashboard()
     {
-        return view('store.dashbord.layouts.template');
+        return view('store.dashbord.dashboard');
     }
 
     public function index()
