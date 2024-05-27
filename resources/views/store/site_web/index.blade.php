@@ -534,13 +534,13 @@
                 <img src="https://placehold.co/1920x940" alt=""  class="animated" data-animation-in="zoomInImage" />
                 <div class="main-slider-content">
                     <span>Haute Couture</span>
-                    <h1>New Arrivals</h1>
+                    <h1>salam</h1>
                     <p>Porem ipsum dolor sit amet consectetur </p>
                     <a href="shop-single.html" title="" class="theme-btn">buy now</a>
                 </div>
             </div><!--main-slider-slide-->
             <div class="main-slider-slide">
-                <img src="https://placehold.co/1920x940" alt=""  class="animated" data-animation-in="zoomInImage" />
+                <img src="{{asset('store/site_web/images/produits/wac/sweatshirt2.png')}}" alt=""  class="animated" data-animation-in="zoomInImage" />
                 <div class="main-slider-content">
                     <span>Haute Couture</span>
                     <h1>New Arrivals</h1>
@@ -1201,16 +1201,7 @@
                                     <li>new</li>
                                     <li>sales</li>
                                 </ul>
-                                <a href="#" title="" class="fvrt-product"><img src="
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                images/icons/heart.svg" alt="" /></a>
+                                <a href="#" title="" class="fvrt-product"><img src="{{asset('images/icons/heart.svg')}}" alt="" /></a>
                             </div>
                             <div class="product-info-hover">
                                 <h3><a href="shop-single.html" title="">Casual Jacket</a></h3>
@@ -2145,7 +2136,6 @@
 
 <!-- Scroll To Top -->
 <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
-
 <script src="{{asset('store/site_web/js/jquery.js')}}"></script> 
 <script src="{{asset('store/site_web/js/jquery-migrate-1.4.1.min.js')}}"></script>
 <script src="{{asset('store/site_web/js/slick.min.js')}}"></script>
@@ -2160,7 +2150,5 @@
 <script src="{{asset('store/site_web/js/masonry.pkgd.min.js')}}" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
 <script src="{{asset('store/site_web/js/video.js')}}"></script>
 <script src="{{asset('store/site_web/js/script.js')}}"></script>
-
-
 </body>
 </html>
