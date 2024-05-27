@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Glance | HTML Template | Home Page 05</title>
+    <title>CasaDerby | Home Page 04</title>
     <!-- Stylesheets -->
     <link href="css/all.min.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -23,7 +23,7 @@
 <body>
 
 
-    <div class="page-wrapper home1 index5_main">
+    <div class="page-wrapper home1 index4_main">
 
         <div class="pointer" id="pointer"></div>
 
@@ -146,7 +146,7 @@
                                         fill="#C5C5C5" />
                                 </g>
                                 <defs>
-                                    <clipPath id="clip0_770_5400">
+                                    <clipPath id="clip0_770_5404">
                                         <rect width="22" height="22" fill="white" />
                                     </clipPath>
                                 </defs>
@@ -726,627 +726,248 @@
                 </ul>
             </div>
         </div><!--overlay-menu-->
-        <section class="i5_banner_main_wrapper">
+
+        <section class="main-slider i4_banner_slider_wrapper">
+            <div class="main-slider-large">
+                <div class="main-slider-slide">
+                    <img src="https://placehold.co/1920x933" alt="" class="animated"
+                        data-animation-in="zoomInImage" />
+                    <div class="slides_content">
+                        <span>glance</span>
+                        <h2>Modern furniture </h2>
+                        <p>Porem ipsum dolor sit amet consectetur </p>
+                        <a href="shop-single.html" class="theme-btn">shop now</a>
+                    </div>
+                </div><!--main-slider-slide-->
+                <div class="main-slider-slide">
+                    <img src="https://placehold.co/1920x933" alt="" class="animated"
+                        data-animation-in="zoomInImage" />
+                    <div class="slides_content">
+                        <span>glance</span>
+                        <h2>Featured furniture </h2>
+                        <p>Porem ipsum dolor sit amet consectetur </p>
+                        <a href="shop-single.html" class="theme-btn">shop now</a>
+                    </div>
+                </div><!--main-slider-slide-->
+                <div class="main-slider-slide">
+                    <img src="https://placehold.co/1920x933" alt="" class="animated"
+                        data-animation-in="zoomInImage" />
+                    <div class="slides_content">
+                        <span>glance</span>
+                        <h2>Modern sofa</h2>
+                        <p>Porem ipsum dolor sit amet consectetur </p>
+                        <a href="shop-single.html" class="theme-btn">shop now</a>
+                    </div>
+                </div><!--main-slider-slide-->
+            </div>
+        </section><!--main-slider-->
+        <section class="category-section i4_category_wrapper">
             <div class="container-fluid">
-                <div class="verticalslider">
-                    <div class="vrt_slides">
-                        <div class="slides_content">
-                            <h2 class="animated">Modern Apple watch</h2>
-                            <a href="#" class="theme-btn">shop now</a>
+                <div class="sec-title wow slideInUp">
+                    <h2>GLANCE Category</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus leo sit amet lorem egestas
+                        iaculis. Donec nibh enim, pharetra vel turpis</p>
+                </div>
+                <div class="swiper-container swiper1 product-categories">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="product-cat">
+                                <a href="#" title="" class="box-link"></a>
+                                <div class="product-thumb">
+                                    <img src="https://placehold.co/412x325" alt="item" />
+                                </div>
+                                <h3><a href="#" title="">Chairs</a></h3>
+                            </div>
                         </div>
-                        <div class="slides_img">
-                            <img src="https://placehold.co/880x557" alt="banner_image" class="">
+                        <div class="swiper-slide">
+                            <div class="product-cat">
+                                <a href="#" title="" class="box-link"></a>
+                                <div class="product-thumb">
+                                    <img src="https://placehold.co/412x325" alt="item" />
+                                </div>
+                                <h3><a href="#" title="">wooden chair</a></h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-cat">
+                                <a href="#" title="" class="box-link"></a>
+                                <div class="product-thumb">
+                                    <img src="https://placehold.co/412x325" alt="item" />
+                                </div>
+                                <h3><a href="#" title="">modular chair</a></h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-cat">
+                                <a href="#" title="" class="box-link"></a>
+                                <a href="#" title="" class="box-link"></a>
+                                <div class="product-thumb">
+                                    <img src="https://placehold.co/412x325" alt="item" />
+                                </div>
+                                <h3><a href="#" title="">bar chair</a></h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-cat">
+                                <a href="#" title="" class="box-link"></a>
+                                <div class="product-thumb">
+                                    <img src="https://placehold.co/412x325" alt="item" />
+                                </div>
+                                <h3><a href="#" title="">Chairs</a></h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-cat">
+                                <a href="#" title="" class="box-link"></a>
+                                <div class="product-thumb">
+                                    <img src="https://placehold.co/412x325" alt="item" />
+                                </div>
+                                <h3><a href="#" title="">wooden chair</a></h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-cat">
+                                <a href="#" title="" class="box-link"></a>
+                                <div class="product-thumb">
+                                    <img src="https://placehold.co/412x325" alt="item" />
+                                </div>
+                                <h3><a href="#" title="">modular chair</a></h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-cat">
+                                <a href="#" title="" class="box-link"></a>
+                                <a href="#" title="" class="box-link"></a>
+                                <div class="product-thumb">
+                                    <img src="https://placehold.co/412x325" alt="item" />
+                                </div>
+                                <h3><a href="#" title="">bar chair</a></h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-cat">
+                                <a href="#" title="" class="box-link"></a>
+                                <div class="product-thumb">
+                                    <img src="https://placehold.co/412x325" alt="item" />
+                                </div>
+                                <h3><a href="#" title="">Chairs</a></h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-cat">
+                                <a href="#" title="" class="box-link"></a>
+                                <div class="product-thumb">
+                                    <img src="https://placehold.co/412x325" alt="item" />
+                                </div>
+                                <h3><a href="#" title="">wooden chair</a></h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-cat">
+                                <a href="#" title="" class="box-link"></a>
+                                <div class="product-thumb">
+                                    <img src="https://placehold.co/412x325" alt="item" />
+                                </div>
+                                <h3><a href="#" title="">modular chair</a></h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-cat">
+                                <a href="#" title="" class="box-link"></a>
+                                <a href="#" title="" class="box-link"></a>
+                                <div class="product-thumb">
+                                    <img src="https://placehold.co/412x325" alt="item" />
+                                </div>
+                                <h3><a href="#" title="">bar chair</a></h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-cat">
+                                <a href="#" title="" class="box-link"></a>
+                                <div class="product-thumb">
+                                    <img src="https://placehold.co/412x325" alt="item" />
+                                </div>
+                                <h3><a href="#" title="">Chairs</a></h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-cat">
+                                <a href="#" title="" class="box-link"></a>
+                                <div class="product-thumb">
+                                    <img src="https://placehold.co/412x325" alt="item" />
+                                </div>
+                                <h3><a href="#" title="">wooden chair</a></h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-cat">
+                                <a href="#" title="" class="box-link"></a>
+                                <div class="product-thumb">
+                                    <img src="https://placehold.co/412x325" alt="item" />
+                                </div>
+                                <h3><a href="#" title="">modular chair</a></h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-cat">
+                                <a href="#" title="" class="box-link"></a>
+                                <a href="#" title="" class="box-link"></a>
+                                <div class="product-thumb">
+                                    <img src="https://placehold.co/412x325" alt="item" />
+                                </div>
+                                <h3><a href="#" title="">bar chair</a></h3>
+                            </div>
                         </div>
                     </div>
-                    <div class="vrt_slides">
-                        <div class="slides_content">
-                            <h2 class="animated">Modern Apple watch</h2>
-                            <a href="#" class="theme-btn">shop now</a>
-                        </div>
-                        <div class="slides_img">
-                            <img src="https://placehold.co/878x557" alt="banner_image" class="">
-                        </div>
-                    </div>
-                    <div class="vrt_slides">
-                        <div class="slides_content">
-                            <h2 class="animated">Modern Apple watch</h2>
-                            <a href="#" class="theme-btn">shop now</a>
-                        </div>
-                        <div class="slides_img">
-                            <img src="https://placehold.co/873x557" alt="banner_image" class="">
-                        </div>
+                    <!-- pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- scrollbar -->
+                    <div class="swiper-scrollbar">
+                        <span class="swiper-scrollbar-drag">
+                            <span class="drag-inner">DISCOVER MORE</span>
+                        </span>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="marquee-section i4_marquee_wrapper i5_marquee_wrapper">
+        <section class="marquee-section i4_marquee_wrapper">
             <div class='marquee2' data-duration='17000' data-gap='37' data-duplicated='true'>
-                <h2>New sale <span>*</span> 50 discount <span>*</span> New sale <span>*</span></h2>
-            </div>
-        </section>
-        <section class="about-section-v3 i5_about_section_v3 ">
-            <div class="container-fluid">
-                <div class="images-slider-v3">
-                    <div class="image-slide-v3">
-                        <img src="https://placehold.co/412x459" alt="item" />
-                    </div><!--image-slide-v3-->
-                    <div class="image-slide-v3">
-                        <img src="https://placehold.co/412x459" alt="item" />
-                    </div><!--image-slide-v3-->
-                    <div class="image-slide-v3">
-                        <img src="https://placehold.co/412x459" alt="item" />
-                    </div><!--image-slide-v3-->
-                    <div class="image-slide-v3">
-                        <img src="https://placehold.co/412x459" alt="item" />
-                    </div><!--image-slide-v3-->
-                    <div class="image-slide-v3">
-                        <img src="https://placehold.co/412x459" alt="item" />
-                    </div><!--image-slide-v3-->
-
-                    <div class="image-slide-v3">
-                        <img src="https://placehold.co/412x459" alt="item" />
-                    </div><!--image-slide-v3-->
-                    <div class="image-slide-v3">
-                        <img src="https://placehold.co/412x459" alt="item" />
-                    </div><!--image-slide-v3-->
-                    <div class="image-slide-v3">
-                        <img src="https://placehold.co/412x459" alt="item" />
-                    </div><!--image-slide-v3-->
-                    <div class="image-slide-v3">
-                        <img src="https://placehold.co/412x459" alt="item" />
-                    </div><!--image-slide-v3-->
-                    <div class="image-slide-v3">
-                        <img src="https://placehold.co/412x459" alt="item" />
-                    </div><!--image-slide-v3-->
-
-                </div><!--images-slider-v3-->
-            </div>
-        </section><!--about-section-v3-->
-        <section class="s_lift_wrapper i5_s_lift_wrapper">
-            <div class="container">
-                <div class="s_lift_container">
-                    <div class="row s_lift_row">
-                        <div class="col-lg-7">
-                            <div class="left_img">
-                                <img src="https://placehold.co/535x537" alt="img" class="img-fluid">
-                                <div class="circle-container">
-                                    <div class="circle delay1"></div>
-                                    <div class="circle delay2"></div>
-                                    <div class="circle delay3"></div>
-                                    <div class="circle delay4"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-5">
-                            <div class="cart-product-content right_content">
-                                <div class="cart-product-info wow fadeInUp">
-                                    <h2>Apple Watch All Colors </h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus leo sit amet
-                                        lorem egestas iaculis. Donec nibh enim, pharetra vel turpis non, vulputate
-                                        luctus ex.</p>
-                                    <div class="price">
-                                        <span>$25.45</span>
-                                    </div>
-                                    <div class="cart-items-add">
-                                        <a href="shop-single.html" title="" class="theme-btn">buy now</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="glance-banner i5_full_video_wrapper">
-            <div class="video-intro wow fadeInUp">
-                <video id="video1" controls autoplay="autoplay" loop>
-                    <source src="i5_full_video.mp4"/>
-                </video>
-            </div>
-        </section> 
-        <section class="accessories-section prod-section i5_new_arr_wrapper">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="arriavls-items-column">
-                            <div class="sec-title text-center">
-                                <h2>new arrivals</h2>
-                            </div>
-                            <div class=" acc-slider acc-slideri5 product-categories v2 ">
-                                <!-- <div class="acc-slide">
-                                    <div class="acc-img">
-                                        <img src="https://placehold.co/263x359" alt="" />
-                                    </div>
-                                    <div class="acc-info">
-                                        <h4><a href="shop-single.html" title="">Casual Jacket</a></h4>
-                                        <span class="acc-price">$25.45</span>
-                                    </div>
-                                </div>
-                                <div class="acc-slide">
-                                    <div class="acc-img">
-                                        <img src="https://placehold.co/263x359" alt="" />
-                                    </div>
-                                    <div class="acc-info">
-                                        <h4><a href="shop-single.html" title="">Casual Jacket</a></h4>
-                                        <span class="acc-price">$25.45</span>
-                                    </div>
-                                </div>
-                                <div class="acc-slide">
-                                    <div class="acc-img">
-                                        <img src="https://placehold.co/263x359" alt="" />
-                                    </div>
-                                    <div class="acc-info">
-                                        <h4><a href="shop-single.html" title="">Casual Jacket</a></h4>
-                                        <span class="acc-price">$25.45</span>
-                                    </div>
-                                </div>
-                                <div class="acc-slide">
-                                    <div class="acc-img">
-                                        <img src="https://placehold.co/263x359" alt="" />
-                                    </div>
-                                    <div class="acc-info">
-                                        <h4><a href="shop-single.html" title="">Casual Jacket</a></h4>
-                                        <span class="acc-price">$25.45</span>
-                                    </div>
-                                </div>
-                                <div class="acc-slide">
-                                    <div class="acc-img">
-                                        <img src="https://placehold.co/263x359" alt="" />
-                                    </div>
-                                    <div class="acc-info">
-                                        <h4><a href="shop-single.html" title="">Casual Jacket</a></h4>
-                                        <span class="acc-price">$25.45</span>
-                                    </div>
-                                </div>
-                                <div class="acc-slide">
-                                    <div class="acc-img">
-                                        <img src="https://placehold.co/263x359" alt="" />
-                                    </div>
-                                    <div class="acc-info">
-                                        <h4><a href="shop-single.html" title="">Casual Jacket</a></h4>
-                                        <span class="acc-price">$25.45</span>
-                                    </div>
-                                </div>
-                                <div class="acc-slide">
-                                    <div class="acc-img">
-                                        <img src="https://placehold.co/263x359" alt="" />
-                                    </div>
-                                    <div class="acc-info">
-                                        <h4><a href="shop-single.html" title="">Casual Jacket</a></h4>
-                                        <span class="acc-price">$25.45</span>
-                                    </div>
-                                </div>
-                                <div class="acc-slide">
-                                    <div class="acc-img">
-                                        <img src="https://placehold.co/263x359" alt="" />
-                                    </div>
-                                    <div class="acc-info">
-                                        <h4><a href="shop-single.html" title="">Casual Jacket</a></h4>
-                                        <span class="acc-price">$25.45</span>
-                                    </div>
-                                </div> -->
-                                <div class="product-cat">
-                                    <div class="product-img">
-                                        <img src="https://placehold.co/306x306" alt="item">
-                                    </div>
-                                    <div class="product-hover-info">
-                                        <div class="product-hover-head">
-                                            <ul class="pt-links">
-                                                <li>new</li>
-                                                <li>sales</li>
-                                            </ul>
-                                            <a href="#" title="" class="fvrt-product"><img src="images/icons/heart.svg"
-                                                    alt="" /></a>
-                                        </div>
-                                        <div class="product-info-hover">
-                                            <h3><a href="shop-single.html" title="">Morden Sofa</a></h3>
-                                            <span>Loues Vuitto</span>
-                                            <div class="pricee">
-                                                <span>$25.45</span>
-                                            </div>
-                                            <ul class="pro-colors">
-                                                <li class="clr1"></li>
-                                                <li class="clr2"></li>
-                                                <li class="clr3"></li>
-                                                <li class="clr4"></li>
-                                            </ul>
-                                            <ul class="variations">
-                                                <li>s</li>
-                                                <li>m</li>
-                                                <li>l</li>
-                                            </ul>
-                                            <ul class="pro-buttons">
-                                                <li><a href="#" title="" class="theme-btn">quick add</a></li>
-                                                <li><a href="#" title="" class="theme-btn quick-view-btn">quick view</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div><!--product-hover-info-->
-                                    <div class="product-info">
-                                        <h3><a href="shop-single.html" title="">Red Sofa</a></h3>
-                                        <span class="product-price">$25.45</span>
-                                    </div>
-                                </div>
-                                <div class="product-cat">
-                                    <div class="product-img">
-                                        <img src="https://placehold.co/266x266" alt="item">
-                                    </div>
-                                    <div class="product-hover-info">
-                                        <div class="product-hover-head">
-                                            <ul class="pt-links">
-                                                <li>new</li>
-                                                <li>sales</li>
-                                            </ul>
-                                            <a href="#" title="" class="fvrt-product"><img src="images/icons/heart.svg"
-                                                    alt="" /></a>
-                                        </div>
-                                        <div class="product-info-hover">
-                                            <h3><a href="shop-single.html" title="">Morden Sofa</a></h3>
-                                            <span>Loues Vuitto</span>
-                                            <div class="pricee">
-                                                <span>$25.45</span>
-                                            </div>
-                                            <ul class="pro-colors">
-                                                <li class="clr1"></li>
-                                                <li class="clr2"></li>
-                                                <li class="clr3"></li>
-                                                <li class="clr4"></li>
-                                            </ul>
-                                            <ul class="variations">
-                                                <li>s</li>
-                                                <li>m</li>
-                                                <li>l</li>
-                                            </ul>
-                                            <ul class="pro-buttons">
-                                                <li><a href="#" title="" class="theme-btn">quick add</a></li>
-                                                <li><a href="#" title="" class="theme-btn quick-view-btn">quick view</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div><!--product-hover-info-->
-                                    <div class="product-info">
-                                        <h3><a href="shop-single.html" title="">Red Sofa</a></h3>
-                                        <span class="product-price">$25.45</span>
-                                    </div>
-                                </div>
-                                <div class="product-cat">
-                                    <div class="product-img">
-                                        <img src="https://placehold.co/326x326" alt="item">
-                                    </div>
-                                    <div class="product-hover-info">
-                                        <div class="product-hover-head">
-                                            <ul class="pt-links">
-                                                <li>new</li>
-                                                <li>sales</li>
-                                            </ul>
-                                            <a href="#" title="" class="fvrt-product"><img src="images/icons/heart.svg"
-                                                    alt="" /></a>
-                                        </div>
-                                        <div class="product-info-hover">
-                                            <h3><a href="shop-single.html" title="">Morden Sofa</a></h3>
-                                            <span>Loues Vuitto</span>
-                                            <div class="pricee">
-                                                <span>$25.45</span>
-                                            </div>
-                                            <ul class="pro-colors">
-                                                <li class="clr1"></li>
-                                                <li class="clr2"></li>
-                                                <li class="clr3"></li>
-                                                <li class="clr4"></li>
-                                            </ul>
-                                            <ul class="variations">
-                                                <li>s</li>
-                                                <li>m</li>
-                                                <li>l</li>
-                                            </ul>
-                                            <ul class="pro-buttons">
-                                                <li><a href="#" title="" class="theme-btn">quick add</a></li>
-                                                <li><a href="#" title="" class="theme-btn quick-view-btn">quick view</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div><!--product-hover-info-->
-                                    <div class="product-info">
-                                        <h3><a href="shop-single.html" title="">Red Sofa</a></h3>
-                                        <span class="product-price">$25.45</span>
-                                    </div>
-                                </div>
-                                <div class="product-cat">
-                                    <div class="product-img">
-                                        <img src="https://placehold.co/326x326" alt="item">
-                                    </div>
-                                    <div class="product-hover-info">
-                                        <div class="product-hover-head">
-                                            <ul class="pt-links">
-                                                <li>new</li>
-                                                <li>sales</li>
-                                            </ul>
-                                            <a href="#" title="" class="fvrt-product"><img src="images/icons/heart.svg"
-                                                    alt="" /></a>
-                                        </div>
-                                        <div class="product-info-hover">
-                                            <h3><a href="shop-single.html" title="">Morden Sofa</a></h3>
-                                            <span>Loues Vuitto</span>
-                                            <div class="pricee">
-                                                <span>$25.45</span>
-                                            </div>
-                                            <ul class="pro-colors">
-                                                <li class="clr1"></li>
-                                                <li class="clr2"></li>
-                                                <li class="clr3"></li>
-                                                <li class="clr4"></li>
-                                            </ul>
-                                            <ul class="variations">
-                                                <li>s</li>
-                                                <li>m</li>
-                                                <li>l</li>
-                                            </ul>
-                                            <ul class="pro-buttons">
-                                                <li><a href="#" title="" class="theme-btn">quick add</a></li>
-                                                <li><a href="#" title="" class="theme-btn quick-view-btn">quick view</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div><!--product-hover-info-->
-                                    <div class="product-info">
-                                        <h3><a href="shop-single.html" title="">Red Sofa</a></h3>
-                                        <span class="product-price">$25.45</span>
-                                    </div>
-                                </div>
-                                <div class="product-cat">
-                                    <div class="product-img">
-                                        <img src="https://placehold.co/306x306" alt="item">
-                                    </div>
-                                    <div class="product-hover-info">
-                                        <div class="product-hover-head">
-                                            <ul class="pt-links">
-                                                <li>new</li>
-                                                <li>sales</li>
-                                            </ul>
-                                            <a href="#" title="" class="fvrt-product"><img src="images/icons/heart.svg"
-                                                    alt="" /></a>
-                                        </div>
-                                        <div class="product-info-hover">
-                                            <h3><a href="shop-single.html" title="">Morden Sofa</a></h3>
-                                            <span>Loues Vuitto</span>
-                                            <div class="pricee">
-                                                <span>$25.45</span>
-                                            </div>
-                                            <ul class="pro-colors">
-                                                <li class="clr1"></li>
-                                                <li class="clr2"></li>
-                                                <li class="clr3"></li>
-                                                <li class="clr4"></li>
-                                            </ul>
-                                            <ul class="variations">
-                                                <li>s</li>
-                                                <li>m</li>
-                                                <li>l</li>
-                                            </ul>
-                                            <ul class="pro-buttons">
-                                                <li><a href="#" title="" class="theme-btn">quick add</a></li>
-                                                <li><a href="#" title="" class="theme-btn quick-view-btn">quick view</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div><!--product-hover-info-->
-                                    <div class="product-info">
-                                        <h3><a href="shop-single.html" title="">Red Sofa</a></h3>
-                                        <span class="product-price">$25.45</span>
-                                    </div>
-                                </div>
-                                <div class="product-cat">
-                                    <div class="product-img">
-                                        <img src="https://placehold.co/266x266" alt="item">
-                                    </div>
-                                    <div class="product-hover-info">
-                                        <div class="product-hover-head">
-                                            <ul class="pt-links">
-                                                <li>new</li>
-                                                <li>sales</li>
-                                            </ul>
-                                            <a href="#" title="" class="fvrt-product"><img src="images/icons/heart.svg"
-                                                    alt="" /></a>
-                                        </div>
-                                        <div class="product-info-hover">
-                                            <h3><a href="shop-single.html" title="">Morden Sofa</a></h3>
-                                            <span>Loues Vuitto</span>
-                                            <div class="pricee">
-                                                <span>$25.45</span>
-                                            </div>
-                                            <ul class="pro-colors">
-                                                <li class="clr1"></li>
-                                                <li class="clr2"></li>
-                                                <li class="clr3"></li>
-                                                <li class="clr4"></li>
-                                            </ul>
-                                            <ul class="variations">
-                                                <li>s</li>
-                                                <li>m</li>
-                                                <li>l</li>
-                                            </ul>
-                                            <ul class="pro-buttons">
-                                                <li><a href="#" title="" class="theme-btn">quick add</a></li>
-                                                <li><a href="#" title="" class="theme-btn quick-view-btn">quick view</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div><!--product-hover-info-->
-                                    <div class="product-info">
-                                        <h3><a href="shop-single.html" title="">Red Sofa</a></h3>
-                                        <span class="product-price">$25.45</span>
-                                    </div>
-                                </div>
-                                <div class="product-cat">
-                                    <div class="product-img">
-                                        <img src="https://placehold.co/326x326" alt="item">
-                                    </div>
-                                    <div class="product-hover-info">
-                                        <div class="product-hover-head">
-                                            <ul class="pt-links">
-                                                <li>new</li>
-                                                <li>sales</li>
-                                            </ul>
-                                            <a href="#" title="" class="fvrt-product"><img src="images/icons/heart.svg"
-                                                    alt="" /></a>
-                                        </div>
-                                        <div class="product-info-hover">
-                                            <h3><a href="shop-single.html" title="">Morden Sofa</a></h3>
-                                            <span>Loues Vuitto</span>
-                                            <div class="pricee">
-                                                <span>$25.45</span>
-                                            </div>
-                                            <ul class="pro-colors">
-                                                <li class="clr1"></li>
-                                                <li class="clr2"></li>
-                                                <li class="clr3"></li>
-                                                <li class="clr4"></li>
-                                            </ul>
-                                            <ul class="variations">
-                                                <li>s</li>
-                                                <li>m</li>
-                                                <li>l</li>
-                                            </ul>
-                                            <ul class="pro-buttons">
-                                                <li><a href="#" title="" class="theme-btn">quick add</a></li>
-                                                <li><a href="#" title="" class="theme-btn quick-view-btn">quick view</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div><!--product-hover-info-->
-                                    <div class="product-info">
-                                        <h3><a href="shop-single.html" title="">Red Sofa</a></h3>
-                                        <span class="product-price">$25.45</span>
-                                    </div>
-                                </div>
-                                <div class="product-cat">
-                                    <div class="product-img">
-                                        <img src="https://placehold.co/326x326" alt="item">
-                                    </div>
-                                    <div class="product-hover-info">
-                                        <div class="product-hover-head">
-                                            <ul class="pt-links">
-                                                <li>new</li>
-                                                <li>sales</li>
-                                            </ul>
-                                            <a href="#" title="" class="fvrt-product"><img src="images/icons/heart.svg"
-                                                    alt="" /></a>
-                                        </div>
-                                        <div class="product-info-hover">
-                                            <h3><a href="shop-single.html" title="">Morden Sofa</a></h3>
-                                            <span>Loues Vuitto</span>
-                                            <div class="pricee">
-                                                <span>$25.45</span>
-                                            </div>
-                                            <ul class="pro-colors">
-                                                <li class="clr1"></li>
-                                                <li class="clr2"></li>
-                                                <li class="clr3"></li>
-                                                <li class="clr4"></li>
-                                            </ul>
-                                            <ul class="variations">
-                                                <li>s</li>
-                                                <li>m</li>
-                                                <li>l</li>
-                                            </ul>
-                                            <ul class="pro-buttons">
-                                                <li><a href="#" title="" class="theme-btn">quick add</a></li>
-                                                <li><a href="#" title="" class="theme-btn quick-view-btn">quick view</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div><!--product-hover-info-->
-                                    <div class="product-info">
-                                        <h3><a href="shop-single.html" title="">Red Sofa</a></h3>
-                                        <span class="product-price">$25.45</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!--arriavls-items-column-->
-                    </div>
-                </div>
-            </div>
-        </section><!--accessories-section-->
-        <section class="s_lift_wrapper i5_s_lift_wrapper i5_s_lift2_wrapper">
-            <div class="container">
-                <div class="s_lift_container">
-                    <div class="row s_lift_row">
-                        <div class="col-lg-5">
-                            <div class="cart-product-content right_content">
-                                <div class="cart-product-info wow fadeInUp">
-                                    <h2>Apple Watch All Colors </h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus leo sit amet
-                                        lorem egestas iaculis. Donec nibh enim, pharetra vel turpis non, vulputate
-                                        luctus ex.</p>
-                                    <div class="price">
-                                        <span>$25.45</span>
-                                    </div>
-                                    <div class="cart-items-add">
-                                        <a href="shop-single.html" title="" class="theme-btn">buy now</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-7">
-                            <div class="left_img">
-                                <img src="https://placehold.co/745x547" alt="img" class="img-fluid">
-                                <div class="circle-container">
-                                    <div class="circle delay1"></div>
-                                    <div class="circle delay2"></div>
-                                    <div class="circle delay3"></div>
-                                    <div class="circle delay4"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="marquee-section v2 mymarque">
-            <div class='marquee' data-duration='17000' data-gap='10' data-duplicated='true'>
                 <h2>The best fashion store can deliver</h2>
             </div>
         </section>
-        <section class="i5_custom_image_gallery_wrapper">
+        <section class="s_lift_wrapper">
             <div class="container-fluid">
-                <div class="row custom_img_gall_row">
-                    <div class="col-lg-8">
-                        <div class="left_image_content">
-                            <div class="gallery row">
-                                <div class="thumbnails row col-sm-6">
-                                    <img src="https://placehold.co/256x272" alt="Product 1 Thumbnail" class="col-6 myp">
-                                    <img src="https://placehold.co/256x272" alt="Product 2 Thumbnail" class="col-6 myp">
-                                    <img src="https://placehold.co/256x272" alt="Product 3 Thumbnail" class="col-6 myp">
-                                    <img src="https://placehold.co/256x272" alt="Product 3 Thumbnail" class="col-6 myp">
-                                </div>
-                                <div class="main-image col-sm-6 myp">
-                                    <img src="https://placehold.co/557x558" alt="Product 1">
-                                </div>
+                <div class="s_lift_container">
+                    <div class="row s_lift_row">
+                        <div class="col-lg-7">
+                            <div class="left_img">
+                                <img src="https://placehold.co/1084x783" alt="img" class="img-fluid">
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="cart-product-content right_content">
-                            <div class="cart-product-info wow fadeInUp">
-                                <h2>Studiofit Light Grey Wooden chair</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus leo sit amet
-                                    lorem egestas iaculis. Donec nibh enim, pharetra vel turpis non, vulputate
-                                    luctus ex. Phasellus pharetra ut dolor ac rutrum.</p>
-                                <div class="price">
-                                    <span>$25.45</span>
-                                    <del>$35.00</del>
-                                </div>
-                                <div class="cart-items-add">
-                                    <div class="quantity">
-                                        <button class="plus-btn" type="button" name="button">
-                                            <i class="fa fa-plus"></i>
-                                        </button>
-                                        <input type="text" name="name" value="1">
-                                        <button class="minus-btn" type="button" name="button">
-                                            <i class="fa fa-minus"></i>
-                                        </button>
+                        <div class="col-lg-5">
+                            <div class="cart-product-content right_content">
+                                <div class="cart-product-info wow fadeInUp">
+                                    <h2>Studiofit Light Grey Wooden chair</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus leo sit amet
+                                        lorem egestas iaculis. Donec nibh enim, pharetra vel turpis non, vulputate
+                                        luctus ex. Phasellus pharetra ut dolor ac rutrum.</p>
+                                    <div class="price">
+                                        <span>$25.45</span>
+                                        <del>$35.00</del>
                                     </div>
-                                    <a href="shop-single.html" title="" class="theme-btn">buy now</a>
+                                    <div class="cart-items-add">
+                                        <div class="quantity">
+                                            <button class="plus-btn" type="button" name="button">
+                                                <i class="fa fa-plus"></i>
+                                            </button>
+                                            <input type="text" name="name" value="1">
+                                            <button class="minus-btn" type="button" name="button">
+                                                <i class="fa fa-minus"></i>
+                                            </button>
+                                        </div>
+                                        <a href="shop-single.html" title="" class="theme-btn">buy now</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1354,53 +975,521 @@
                 </div>
             </div>
         </section>
-        <section class="prod-section i5_prod_section">
+        <section class="top_furniture_wrapper">
             <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="prod-col">
-                            <img src="https://placehold.co/625x614" alt="item">
-                            <div class="prod-caption">
-                                <h3><a href="#" title="">All Phone Cover</a></h3>
-                                <p>Lorem ipsum dolor sit consectetur adipiscing elit.</p>
-                                <a href="shop-single.html" title="" class="theme-btn">shop now</a>
+                <div class="sec-title wow slideInUp">
+                    <h2>Top furniture</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus leo sit amet lorem egestas
+                        iaculis. Donec nibh enim, pharetra vel turpis</p>
+                </div>
+                <div class="top-furniture-swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="top_furniture_item">
+                                <div class="item_img">
+                                    <img src="images/top_furniture_item1.png" alt="item" class="img-fluid">
+                                    <div class="circle-container">
+                                        <div class="circle delay1"></div>
+                                        <div class="circle delay2"></div>
+                                        <div class="circle delay3"></div>
+                                        <div class="circle delay4"></div>
+                                    </div>
+                                </div>
+                                <div class="item_detail">
+                                    <h3>Casual Jacket</h3>
+                                    <h6>$25.45</h6>
+                                    <a href="#" class="theme-btn">Buy now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="top_furniture_item">
+                                <div class="item_img">
+                                    <img src="images/top_furniture_item2.png" alt="item" class="img-fluid">
+                                    <div class="circle-container">
+                                        <div class="circle delay1"></div>
+                                        <div class="circle delay2"></div>
+                                        <div class="circle delay3"></div>
+                                        <div class="circle delay4"></div>
+                                    </div>
+                                </div>
+                                <div class="item_detail">
+                                    <h3>Casual Jacket</h3>
+                                    <h6>$25.45</h6>
+                                    <a href="#" class="theme-btn">Buy now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="top_furniture_item">
+                                <div class="item_img">
+                                    <img src="images/top_furniture_item3.png" alt="item" class="img-fluid">
+                                    <div class="circle-container">
+                                        <div class="circle delay1"></div>
+                                        <div class="circle delay2"></div>
+                                        <div class="circle delay3"></div>
+                                        <div class="circle delay4"></div>
+                                    </div>
+                                </div>
+                                <div class="item_detail">
+                                    <h3>Casual Jacket</h3>
+                                    <h6>$25.45</h6>
+                                    <a href="#" class="theme-btn">Buy now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="top_furniture_item">
+                                <div class="item_img">
+                                    <img src="images/top_furniture_item1.png" alt="item" class="img-fluid">
+                                    <div class="circle-container">
+                                        <div class="circle delay1"></div>
+                                        <div class="circle delay2"></div>
+                                        <div class="circle delay3"></div>
+                                        <div class="circle delay4"></div>
+                                    </div>
+                                </div>
+                                <div class="item_detail">
+                                    <h3>Casual Jacket</h3>
+                                    <h6>$25.45</h6>
+                                    <a href="#" class="theme-btn">Buy now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="top_furniture_item">
+                                <div class="item_img">
+                                    <img src="images/top_furniture_item2.png" alt="item" class="img-fluid">
+                                    <div class="circle-container">
+                                        <div class="circle delay1"></div>
+                                        <div class="circle delay2"></div>
+                                        <div class="circle delay3"></div>
+                                        <div class="circle delay4"></div>
+                                    </div>
+                                </div>
+                                <div class="item_detail">
+                                    <h3>Casual Jacket</h3>
+                                    <h6>$25.45</h6>
+                                    <a href="#" class="theme-btn">Buy now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="top_furniture_item">
+                                <div class="item_img">
+                                    <img src="images/top_furniture_item3.png" alt="item" class="img-fluid">
+                                    <div class="circle-container">
+                                        <div class="circle delay1"></div>
+                                        <div class="circle delay2"></div>
+                                        <div class="circle delay3"></div>
+                                        <div class="circle delay4"></div>
+                                    </div>
+                                </div>
+                                <div class="item_detail">
+                                    <h3>Casual Jacket</h3>
+                                    <h6>$25.45</h6>
+                                    <a href="#" class="theme-btn">Buy now</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="prod-col">
-                            <img src="https://placehold.co/626x614" alt="item">
-                            <div class="prod-caption">
-                                <h3><a href="#" title="">laptop cover</a></h3>
-                                <p>Lorem ipsum dolor sit consectetur adipiscing elit.</p>
-                                <a href="shop-single.html" title="" class="theme-btn">shop now</a>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <section class="glance-banner i4_vedio_wrapper">
+            <div class="video-intro wow fadeInUp">
+                <video id="i4_video" class="auto_video_play" controls autoplay="autoplay" loop>
+                    <source src="i4_full_video.mp4" />
+                </video>
+            </div>
+        </section>
+        <section class="collection-section v2 i4_new_collection_wrapper">
+            <div class="container-fluid">
+                <div class="sec-title space-v2 wow slideInUp">
+                    <h2>new collection</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus leo sit amet lorem egestas
+                        iaculis. Donec nibh enim, pharetra vel turpis</p>
+                </div>
+                <div class="product-categories v2 without-slide row">
+                    <div class="col-lg-2">
+                        <div class="product-cat">
+                            <div class="product-img">
+                                <img src="https://placehold.co/263x358" alt="item">
+                                <span class="pro-category">new</span>
+                            </div>
+                            <div class="product-hover-info">
+                                <div class="product-hover-head">
+                                    <ul class="pt-links">
+                                        <li>new</li>
+                                        <li>sales</li>
+                                    </ul>
+                                    <a href="#" title="" class="fvrt-product"><img src="images/icons/heart.svg"
+                                            alt="" /></a>
+                                </div>
+                                <div class="product-info-hover">
+                                    <h3><a href="shop-single.html" title="">Morden Sofa</a></h3>
+                                    <span>Loues Vuitto</span>
+                                    <div class="pricee">
+                                        <span>$25.45</span>
+                                    </div>
+                                    <ul class="pro-colors">
+                                        <li class="clr1"></li>
+                                        <li class="clr2"></li>
+                                        <li class="clr3"></li>
+                                        <li class="clr4"></li>
+                                    </ul>
+                                    <ul class="variations">
+                                        <li>s</li>
+                                        <li>m</li>
+                                        <li>l</li>
+                                    </ul>
+                                    <ul class="pro-buttons">
+                                        <li><a href="#" title="" class="theme-btn">quick add</a></li>
+                                        <li><a href="#" title="" class="theme-btn quick-view-btn">quick view</a></li>
+                                    </ul>
+                                </div>
+                            </div><!--product-hover-info-->
+                            <div class="product-info">
+                                <h3><a href="shop-single.html" title="">Red Sofa</a></h3>
+                                <span class="product-price">$25.45</span>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="prod-col">
-                            <img src="https://placehold.co/625x614" alt="item">
-                            <div class="prod-caption">
-                                <h3><a href="#" title="">ear buds cover</a></h3>
-                                <p>Lorem ipsum dolor sit consectetur adipiscing elit.</p>
-                                <a href="shop-single.html" title="" class="theme-btn">shop now</a>
+                    <div class="col-lg-2">
+                        <div class="product-cat">
+                            <div class="product-img">
+                                <img src="https://placehold.co/263x358" alt="item">
+                                <span class="pro-category">new</span>
+                            </div>
+                            <div class="product-hover-info">
+                                <div class="product-hover-head">
+                                    <ul class="pt-links">
+                                        <li>new</li>
+                                        <li>sales</li>
+                                    </ul>
+                                    <a href="#" title="" class="fvrt-product"><img src="images/icons/heart.svg"
+                                            alt="" /></a>
+                                </div>
+                                <div class="product-info-hover">
+                                    <h3><a href="shop-single.html" title="">Morden Sofa</a></h3>
+                                    <span>Loues Vuitto</span>
+                                    <div class="pricee">
+                                        <span>$25.45</span>
+                                    </div>
+                                    <ul class="pro-colors">
+                                        <li class="clr1"></li>
+                                        <li class="clr2"></li>
+                                        <li class="clr3"></li>
+                                        <li class="clr4"></li>
+                                    </ul>
+                                    <ul class="variations">
+                                        <li>s</li>
+                                        <li>m</li>
+                                        <li>l</li>
+                                    </ul>
+                                    <ul class="pro-buttons">
+                                        <li><a href="#" title="" class="theme-btn">quick add</a></li>
+                                        <li><a href="#" title="" class="theme-btn quick-view-btn">quick view</a></li>
+                                    </ul>
+                                </div>
+                            </div><!--product-hover-info-->
+                            <div class="product-info">
+                                <h3><a href="shop-single.html" title="">chex Sofa</a></h3>
+                                <span class="product-price">$25.45</span>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 full_prod">
-                        <div class="prod-col">
-                            <img src="https://placehold.co/1830x584" alt="item">
-                            <div class="prod-caption">
-                                <h3><a href="#" title="">ear buds cover</a></h3>
-                                <p>Lorem ipsum dolor sit consectetur adipiscing elit.</p>
-                                <a href="shop-single.html" title="" class="theme-btn">shop now</a>
+                    <div class="col-lg-2">
+                        <div class="product-cat">
+                            <div class="product-img">
+                                <img src="https://placehold.co/263x358" alt="item">
+                                <span class="pro-category">Sale</span>
+                            </div>
+                            <div class="product-hover-info">
+                                <div class="product-hover-head">
+                                    <ul class="pt-links">
+                                        <li>new</li>
+                                        <li>sales</li>
+                                    </ul>
+                                    <a href="#" title="" class="fvrt-product"><img src="images/icons/heart.svg"
+                                            alt="" /></a>
+                                </div>
+                                <div class="product-info-hover">
+                                    <h3><a href="shop-single.html" title="">Morden Sofa</a></h3>
+                                    <span>Loues Vuitto</span>
+                                    <div class="pricee">
+                                        <span>$25.45</span>
+                                    </div>
+                                    <ul class="pro-colors">
+                                        <li class="clr1"></li>
+                                        <li class="clr2"></li>
+                                        <li class="clr3"></li>
+                                        <li class="clr4"></li>
+                                    </ul>
+                                    <ul class="variations">
+                                        <li>s</li>
+                                        <li>m</li>
+                                        <li>l</li>
+                                    </ul>
+                                    <ul class="pro-buttons">
+                                        <li><a href="#" title="" class="theme-btn">quick add</a></li>
+                                        <li><a href="#" title="" class="theme-btn quick-view-btn">quick view</a></li>
+                                    </ul>
+                                </div>
+                            </div><!--product-hover-info-->
+                            <div class="product-info">
+                                <h3><a href="shop-single.html" title="">Green Sofa</a></h3>
+                                <span class="product-price">$25.45</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="product-cat">
+                            <div class="product-img">
+                                <img src="https://placehold.co/263x358" alt="item">
+                                <span class="pro-category">new</span>
+                            </div>
+                            <div class="product-hover-info">
+                                <div class="product-hover-head">
+                                    <ul class="pt-links">
+                                        <li>new</li>
+                                        <li>sales</li>
+                                    </ul>
+                                    <a href="#" title="" class="fvrt-product"><img src="images/icons/heart.svg"
+                                            alt="" /></a>
+                                </div>
+                                <div class="product-info-hover">
+                                    <h3><a href="shop-single.html" title="">Morden Sofa</a></h3>
+                                    <span>Loues Vuitto</span>
+                                    <div class="pricee">
+                                        <span>$25.45</span>
+                                    </div>
+                                    <ul class="pro-colors">
+                                        <li class="clr1"></li>
+                                        <li class="clr2"></li>
+                                        <li class="clr3"></li>
+                                        <li class="clr4"></li>
+                                    </ul>
+                                    <ul class="variations">
+                                        <li>s</li>
+                                        <li>m</li>
+                                        <li>l</li>
+                                    </ul>
+                                    <ul class="pro-buttons">
+                                        <li><a href="#" title="" class="theme-btn">quick add</a></li>
+                                        <li><a href="#" title="" class="theme-btn quick-view-btn">quick view</a></li>
+                                    </ul>
+                                </div>
+                            </div><!--product-hover-info-->
+                            <div class="product-info">
+                                <h3><a href="shop-single.html" title="">White Sofa</a></h3>
+                                <span class="product-price">$25.45</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="product-cat">
+                            <div class="product-img">
+                                <img src="https://placehold.co/263x358" alt="item">
+                            </div>
+                            <div class="product-hover-info">
+                                <div class="product-hover-head">
+                                    <ul class="pt-links">
+                                        <li>new</li>
+                                        <li>sales</li>
+                                    </ul>
+                                    <a href="#" title="" class="fvrt-product"><img src="images/icons/heart.svg"
+                                            alt="" /></a>
+                                </div>
+                                <div class="product-info-hover">
+                                    <h3><a href="shop-single.html" title="">Morden Sofa</a></h3>
+                                    <span>Loues Vuitto</span>
+                                    <div class="pricee">
+                                        <span>$25.45</span>
+                                    </div>
+                                    <ul class="pro-colors">
+                                        <li class="clr1"></li>
+                                        <li class="clr2"></li>
+                                        <li class="clr3"></li>
+                                        <li class="clr4"></li>
+                                    </ul>
+                                    <ul class="variations">
+                                        <li>s</li>
+                                        <li>m</li>
+                                        <li>l</li>
+                                    </ul>
+                                    <ul class="pro-buttons">
+                                        <li><a href="#" title="" class="theme-btn">quick add</a></li>
+                                        <li><a href="#" title="" class="theme-btn quick-view-btn">quick view</a></li>
+                                    </ul>
+                                </div>
+                            </div><!--product-hover-info-->
+                            <div class="product-info">
+                                <h3><a href="shop-single.html" title="">Green Sofa</a></h3>
+                                <span class="product-price">$25.45</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="product-cat">
+                            <div class="product-img">
+                                <img src="https://placehold.co/263x358" alt="item">
+                                <span class="pro-category">Sale</span>
+                            </div>
+                            <div class="product-hover-info">
+                                <div class="product-hover-head">
+                                    <ul class="pt-links">
+                                        <li>new</li>
+                                        <li>sales</li>
+                                    </ul>
+                                    <a href="#" title="" class="fvrt-product"><img src="images/icons/heart.svg"
+                                            alt="" /></a>
+                                </div>
+                                <div class="product-info-hover">
+                                    <h3><a href="shop-single.html" title="">Morden Sofa</a></h3>
+                                    <span>Loues Vuitto</span>
+                                    <div class="pricee">
+                                        <span>$25.45</span>
+                                    </div>
+                                    <ul class="pro-colors">
+                                        <li class="clr1"></li>
+                                        <li class="clr2"></li>
+                                        <li class="clr3"></li>
+                                        <li class="clr4"></li>
+                                    </ul>
+                                    <ul class="variations">
+                                        <li>s</li>
+                                        <li>m</li>
+                                        <li>l</li>
+                                    </ul>
+                                    <ul class="pro-buttons">
+                                        <li><a href="#" title="" class="theme-btn">quick add</a></li>
+                                        <li><a href="#" title="" class="theme-btn quick-view-btn">quick view</a></li>
+                                    </ul>
+                                </div>
+                            </div><!--product-hover-info-->
+                            <div class="product-info">
+                                <h3><a href="shop-single.html" title="">Grey Sofa</a></h3>
+                                <span class="product-price">$25.45</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </section><!--collection-section-->
+        <section class="testimonial-section-v2 i4_testimonial_wrapper">
+            <div class="container-full">
+                <div class="sec-title space-v2 wow fadeInUp">
+                    <h2>client testimonials</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus leo sit amet lorem egestas
+                        iaculis. Donec nibh enim, pharetra vel turpis</p>
+                </div>
+                <div class="i4_testimonial_container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="testi_item">
+                                <div class="item_img">
+                                    <img src="https://placehold.co/103x103" alt="">
+                                </div>
+                                <h4 class="name">Arbaz Ali</h4>
+                                <div class="para">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. In luctus leo sit amet
+                                        lorem egestas iaculis. Donec nibh enim, pharetra vel turpis</p>
+                                </div>
+                                <div class="item_rating">
+                                    <img src="images/index_4_img/testi_star.png" alt="star" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testi_item">
+                                <div class="item_img">
+                                    <img src="https://placehold.co/103x103" alt="">
+                                </div>
+                                <h4 class="name">Arbaz Ali</h4>
+                                <div class="para">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. In luctus leo sit amet
+                                        lorem egestas iaculis. Donec nibh enim, pharetra vel turpis</p>
+                                </div>
+                                <div class="item_rating">
+                                    <img src="images/index_4_img/testi_star.png" alt="star" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testi_item">
+                                <div class="item_img">
+                                    <img src="https://placehold.co/103x103" alt="">
+                                </div>
+                                <h4 class="name">Arbaz Ali</h4>
+                                <div class="para">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. In luctus leo sit amet
+                                        lorem egestas iaculis. Donec nibh enim, pharetra vel turpis</p>
+                                </div>
+                                <div class="item_rating">
+                                    <img src="images/index_4_img/testi_star.png" alt="star" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testi_item">
+                                <div class="item_img">
+                                    <img src="https://placehold.co/103x103" alt="">
+                                </div>
+                                <h4 class="name">Arbaz Ali</h4>
+                                <div class="para">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. In luctus leo sit amet
+                                        lorem egestas iaculis. Donec nibh enim, pharetra vel turpis</p>
+                                </div>
+                                <div class="item_rating">
+                                    <img src="images/index_4_img/testi_star.png" alt="star" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testi_item">
+                                <div class="item_img">
+                                    <img src="https://placehold.co/103x103" alt="">
+                                </div>
+                                <h4 class="name">Arbaz Ali</h4>
+                                <div class="para">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. In luctus leo sit amet
+                                        lorem egestas iaculis. Donec nibh enim, pharetra vel turpis</p>
+                                </div>
+                                <div class="item_rating">
+                                    <img src="images/index_4_img/testi_star.png" alt="star" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testi_item">
+                                <div class="item_img">
+                                    <img src="https://placehold.co/103x103" alt="">
+                                </div>
+                                <h4 class="name">Arbaz Ali</h4>
+                                <div class="para">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. In luctus leo sit amet
+                                        lorem egestas iaculis. Donec nibh enim, pharetra vel turpis</p>
+                                </div>
+                                <div class="item_rating">
+                                    <img src="images/index_4_img/testi_star.png" alt="star" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
         </section>
-        <section class="collection-section new_collection_drag i5_n_c_wrapper">
+        <section class="marquee-section i4_marquee_wrapper i4_marquee_wrapper2">
+            <div class='marquee2' data-duration='17000' data-gap='37' data-duplicated='true'>
+                <h2>The best fashion store can deliver</h2>
+            </div>
+        </section>
+        <section class="collection-section new_collection_drag">
             <div class="container-fluid">
                 <div class="sec-title wow slideInUp">
                     <h2>new collection</h2>
@@ -1412,7 +1501,7 @@
                         <div class="swiper-slide">
                             <div class="product-cat">
                                 <div class="product-img">
-                                    <img src="https://placehold.co/226x292" alt="item">
+                                    <img src="https://placehold.co/289x392" alt="item">
                                 </div>
                                 <div class="product-hover-info">
                                     <div class="product-hover-head">
@@ -1456,7 +1545,8 @@
                         <div class="swiper-slide">
                             <div class="product-cat">
                                 <div class="product-img">
-                                    <img src="https://placehold.co/352x191" alt="item">
+                                    <img src="https://placehold.co/289x392" alt="item">
+                                    <span class="pro-category">new</span>
                                 </div>
                                 <div class="product-hover-info">
                                     <div class="product-hover-head">
@@ -1500,7 +1590,8 @@
                         <div class="swiper-slide">
                             <div class="product-cat">
                                 <div class="product-img">
-                                    <img src="https://placehold.co/332x332" alt="item">
+                                    <img src="https://placehold.co/289x392" alt="item">
+                                    <span class="pro-category">Sale</span>
                                 </div>
                                 <div class="product-hover-info">
                                     <div class="product-hover-head">
@@ -1544,7 +1635,7 @@
                         <div class="swiper-slide">
                             <div class="product-cat">
                                 <div class="product-img">
-                                    <img src="https://placehold.co/332x332" alt="item">
+                                    <img src="https://placehold.co/289x392" alt="item">
                                 </div>
                                 <div class="product-hover-info">
                                     <div class="product-hover-head">
@@ -1588,7 +1679,8 @@
                         <div class="swiper-slide">
                             <div class="product-cat">
                                 <div class="product-img">
-                                    <img src="https://placehold.co/332x332" alt="item">
+                                    <img src="https://placehold.co/289x392" alt="item">
+                                    <span class="pro-category">new</span>
                                 </div>
                                 <div class="product-hover-info">
                                     <div class="product-hover-head">
@@ -1632,7 +1724,7 @@
                         <div class="swiper-slide">
                             <div class="product-cat">
                                 <div class="product-img">
-                                    <img src="https://placehold.co/226x292" alt="item">
+                                    <img src="https://placehold.co/289x392" alt="item">
                                 </div>
                                 <div class="product-hover-info">
                                     <div class="product-hover-head">
@@ -1676,7 +1768,8 @@
                         <div class="swiper-slide">
                             <div class="product-cat">
                                 <div class="product-img">
-                                    <img src="https://placehold.co/352x191" alt="item">
+                                    <img src="https://placehold.co/289x392" alt="item">
+                                    <span class="pro-category">new</span>
                                 </div>
                                 <div class="product-hover-info">
                                     <div class="product-hover-head">
@@ -1720,7 +1813,8 @@
                         <div class="swiper-slide">
                             <div class="product-cat">
                                 <div class="product-img">
-                                    <img src="https://placehold.co/332x332" alt="item">
+                                    <img src="https://placehold.co/289x392" alt="item">
+                                    <span class="pro-category">Sale</span>
                                 </div>
                                 <div class="product-hover-info">
                                     <div class="product-hover-head">
@@ -1764,7 +1858,7 @@
                         <div class="swiper-slide">
                             <div class="product-cat">
                                 <div class="product-img">
-                                    <img src="https://placehold.co/332x332" alt="item">
+                                    <img src="https://placehold.co/289x392" alt="item">
                                 </div>
                                 <div class="product-hover-info">
                                     <div class="product-hover-head">
@@ -1808,7 +1902,8 @@
                         <div class="swiper-slide">
                             <div class="product-cat">
                                 <div class="product-img">
-                                    <img src="https://placehold.co/332x332" alt="item">
+                                    <img src="https://placehold.co/289x392" alt="item">
+                                    <span class="pro-category">new</span>
                                 </div>
                                 <div class="product-hover-info">
                                     <div class="product-hover-head">
@@ -1852,7 +1947,7 @@
                         <div class="swiper-slide">
                             <div class="product-cat">
                                 <div class="product-img">
-                                    <img src="https://placehold.co/226x292" alt="item">
+                                    <img src="https://placehold.co/289x392" alt="item">
                                 </div>
                                 <div class="product-hover-info">
                                     <div class="product-hover-head">
@@ -1896,7 +1991,8 @@
                         <div class="swiper-slide">
                             <div class="product-cat">
                                 <div class="product-img">
-                                    <img src="https://placehold.co/352x191" alt="item">
+                                    <img src="https://placehold.co/289x392" alt="item">
+                                    <span class="pro-category">new</span>
                                 </div>
                                 <div class="product-hover-info">
                                     <div class="product-hover-head">
@@ -1940,7 +2036,8 @@
                         <div class="swiper-slide">
                             <div class="product-cat">
                                 <div class="product-img">
-                                    <img src="https://placehold.co/332x332" alt="item">
+                                    <img src="https://placehold.co/289x392" alt="item">
+                                    <span class="pro-category">Sale</span>
                                 </div>
                                 <div class="product-hover-info">
                                     <div class="product-hover-head">
@@ -1984,7 +2081,7 @@
                         <div class="swiper-slide">
                             <div class="product-cat">
                                 <div class="product-img">
-                                    <img src="https://placehold.co/332x332" alt="item">
+                                    <img src="https://placehold.co/289x392" alt="item">
                                 </div>
                                 <div class="product-hover-info">
                                     <div class="product-hover-head">
@@ -2028,227 +2125,8 @@
                         <div class="swiper-slide">
                             <div class="product-cat">
                                 <div class="product-img">
-                                    <img src="https://placehold.co/332x332" alt="item">
-                                </div>
-                                <div class="product-hover-info">
-                                    <div class="product-hover-head">
-                                        <ul class="pt-links">
-                                            <li>new</li>
-                                            <li>sales</li>
-                                        </ul>
-                                        <a href="#" title="" class="fvrt-product"><img src="images/icons/heart.svg"
-                                                alt="" /></a>
-                                    </div>
-                                    <div class="product-info-hover">
-                                        <h3><a href="shop-single.html" title="">Morden Sofa</a></h3>
-                                        <span>Loues Vuitto</span>
-                                        <div class="pricee">
-                                            <span>$25.45</span>
-                                        </div>
-                                        <ul class="pro-colors">
-                                            <li class="clr1"></li>
-                                            <li class="clr2"></li>
-                                            <li class="clr3"></li>
-                                            <li class="clr4"></li>
-                                        </ul>
-                                        <ul class="variations">
-                                            <li>s</li>
-                                            <li>m</li>
-                                            <li>l</li>
-                                        </ul>
-                                        <ul class="pro-buttons">
-                                            <li><a href="#" title="" class="theme-btn">quick add</a></li>
-                                            <li><a href="#" title="" class="theme-btn quick-view-btn">quick view</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div><!--product-hover-info-->
-                                <div class="product-info">
-                                    <h3><a href="shop-single.html" title="">Grey couch</a></h3>
-                                    <span class="product-price">$25.45</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="product-cat">
-                                <div class="product-img">
-                                    <img src="https://placehold.co/226x292" alt="item">
-                                </div>
-                                <div class="product-hover-info">
-                                    <div class="product-hover-head">
-                                        <ul class="pt-links">
-                                            <li>new</li>
-                                            <li>sales</li>
-                                        </ul>
-                                        <a href="#" title="" class="fvrt-product"><img src="images/icons/heart.svg"
-                                                alt="" /></a>
-                                    </div>
-                                    <div class="product-info-hover">
-                                        <h3><a href="shop-single.html" title="">Morden Sofa</a></h3>
-                                        <span>Loues Vuitto</span>
-                                        <div class="pricee">
-                                            <span>$25.45</span>
-                                        </div>
-                                        <ul class="pro-colors">
-                                            <li class="clr1"></li>
-                                            <li class="clr2"></li>
-                                            <li class="clr3"></li>
-                                            <li class="clr4"></li>
-                                        </ul>
-                                        <ul class="variations">
-                                            <li>s</li>
-                                            <li>m</li>
-                                            <li>l</li>
-                                        </ul>
-                                        <ul class="pro-buttons">
-                                            <li><a href="#" title="" class="theme-btn">quick add</a></li>
-                                            <li><a href="#" title="" class="theme-btn quick-view-btn">quick view</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div><!--product-hover-info-->
-                                <div class="product-info">
-                                    <h3><a href="shop-single.html" title="">Red Sofa</a></h3>
-                                    <span class="product-price">$25.45</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="product-cat">
-                                <div class="product-img">
-                                    <img src="https://placehold.co/352x191" alt="item">
-                                </div>
-                                <div class="product-hover-info">
-                                    <div class="product-hover-head">
-                                        <ul class="pt-links">
-                                            <li>new</li>
-                                            <li>sales</li>
-                                        </ul>
-                                        <a href="#" title="" class="fvrt-product"><img src="images/icons/heart.svg"
-                                                alt="" /></a>
-                                    </div>
-                                    <div class="product-info-hover">
-                                        <h3><a href="shop-single.html" title="">Morden Sofa</a></h3>
-                                        <span>Loues Vuitto</span>
-                                        <div class="pricee">
-                                            <span>$25.45</span>
-                                        </div>
-                                        <ul class="pro-colors">
-                                            <li class="clr1"></li>
-                                            <li class="clr2"></li>
-                                            <li class="clr3"></li>
-                                            <li class="clr4"></li>
-                                        </ul>
-                                        <ul class="variations">
-                                            <li>s</li>
-                                            <li>m</li>
-                                            <li>l</li>
-                                        </ul>
-                                        <ul class="pro-buttons">
-                                            <li><a href="#" title="" class="theme-btn">quick add</a></li>
-                                            <li><a href="#" title="" class="theme-btn quick-view-btn">quick view</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div><!--product-hover-info-->
-                                <div class="product-info">
-                                    <h3><a href="shop-single.html" title="">green couch</a></h3>
-                                    <span class="product-price">$25.45</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="product-cat">
-                                <div class="product-img">
-                                    <img src="https://placehold.co/332x332" alt="item">
-                                </div>
-                                <div class="product-hover-info">
-                                    <div class="product-hover-head">
-                                        <ul class="pt-links">
-                                            <li>new</li>
-                                            <li>sales</li>
-                                        </ul>
-                                        <a href="#" title="" class="fvrt-product"><img src="images/icons/heart.svg"
-                                                alt="" /></a>
-                                    </div>
-                                    <div class="product-info-hover">
-                                        <h3><a href="shop-single.html" title="">Morden Sofa</a></h3>
-                                        <span>Loues Vuitto</span>
-                                        <div class="pricee">
-                                            <span>$25.45</span>
-                                        </div>
-                                        <ul class="pro-colors">
-                                            <li class="clr1"></li>
-                                            <li class="clr2"></li>
-                                            <li class="clr3"></li>
-                                            <li class="clr4"></li>
-                                        </ul>
-                                        <ul class="variations">
-                                            <li>s</li>
-                                            <li>m</li>
-                                            <li>l</li>
-                                        </ul>
-                                        <ul class="pro-buttons">
-                                            <li><a href="#" title="" class="theme-btn">quick add</a></li>
-                                            <li><a href="#" title="" class="theme-btn quick-view-btn">quick view</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div><!--product-hover-info-->
-                                <div class="product-info">
-                                    <h3><a href="shop-single.html" title="">Royal Sofa</a></h3>
-                                    <span class="product-price">$25.45</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="product-cat">
-                                <div class="product-img">
-                                    <img src="https://placehold.co/332x332" alt="item">
-                                </div>
-                                <div class="product-hover-info">
-                                    <div class="product-hover-head">
-                                        <ul class="pt-links">
-                                            <li>new</li>
-                                            <li>sales</li>
-                                        </ul>
-                                        <a href="#" title="" class="fvrt-product"><img src="images/icons/heart.svg"
-                                                alt="" /></a>
-                                    </div>
-                                    <div class="product-info-hover">
-                                        <h3><a href="shop-single.html" title="">Morden Sofa</a></h3>
-                                        <span>Loues Vuitto</span>
-                                        <div class="pricee">
-                                            <span>$25.45</span>
-                                        </div>
-                                        <ul class="pro-colors">
-                                            <li class="clr1"></li>
-                                            <li class="clr2"></li>
-                                            <li class="clr3"></li>
-                                            <li class="clr4"></li>
-                                        </ul>
-                                        <ul class="variations">
-                                            <li>s</li>
-                                            <li>m</li>
-                                            <li>l</li>
-                                        </ul>
-                                        <ul class="pro-buttons">
-                                            <li><a href="#" title="" class="theme-btn">quick add</a></li>
-                                            <li><a href="#" title="" class="theme-btn quick-view-btn">quick view</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div><!--product-hover-info-->
-                                <div class="product-info">
-                                    <h3><a href="shop-single.html" title="">Soft Sofa</a></h3>
-                                    <span class="product-price">$25.45</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="product-cat">
-                                <div class="product-img">
-                                    <img src="https://placehold.co/332x332" alt="item">
+                                    <img src="https://placehold.co/289x392" alt="item">
+                                    <span class="pro-category">new</span>
                                 </div>
                                 <div class="product-hover-info">
                                     <div class="product-hover-head">
@@ -2299,145 +2177,13 @@
                 </div>
             </div>
         </section><!--collection-section-->
-        <section class="marquee-section i4_marquee_wrapper i5_marquee_wrapper">
-            <div class='marquee2' data-duration='17000' data-gap='37' data-duplicated='true'>
-                <h2>New sale <span>*</span> 50 discount <span>*</span> New sale <span>*</span></h2>
-            </div>
-        </section>
-        <section class="i5_video_review_wrapper">
-            <div class="container-fluid">
-                <div class="i5_video_review_container">
-                    <div class="row">
-                        <div class="col-lg-3">
-                            <div class="sec-title wow slideInUp">
-                                <h2>Video review</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus leo sit amet lorem
-                                    egestas iaculis. Donec nibh enim, pharetra vel turpis</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-9">
-                            <div class="i4_video_slider_container i5_video_review_slider_container">
-                                <div class="v_slider">
-                                    <div class="v_slide">
-                                        <div class="vr_video">
-                                            <video class="s_video" controls>
-                                                <source src="1105931_1080p_Teenage_Hood_1920x1080.mp4" type="video/mp4">
-                                            </video>
-                                            <button class="custom-button" onclick="toggleVideo(0)">
-                                                <img src="images/index_4_img/play_icon.png" alt="play-pause">
-                                            </button>
-                                        </div>
-                                        <div class="vr_content">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a semper
-                                                felis. Pellentesque pretium risus a augue mattis, ac euismod tellus
-                                                dignissim.</p>
-                                            <h3>Morden Sofa</h3>
-                                        </div>
-                                    </div>
-                                    <div class="v_slide">
-                                        <div class="vr_video">
-                                            <video class="s_video" controls>
-                                                <source src="video.mp4"
-                                                    type="video/mp4">
-                                            </video>
-                                            <button class="custom-button" onclick="toggleVideo(1)">
-                                                <img src="images/index_4_img/play_icon.png" alt="play-pause">
-                                            </button>
-                                        </div>
-                                        <div class="vr_content">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a semper
-                                                felis. Pellentesque pretium risus a augue mattis, ac euismod tellus
-                                                dignissim.</p>
-                                            <h3>Morden Sofa</h3>
-                                        </div>
-                                    </div>
-                                    <div class="v_slide">
-                                        <div class="vr_video">
-                                            <video class="s_video" controls>
-                                                <source src="video2.mp4"
-                                                    type="video/mp4">
-                                            </video>
-                                            <button class="custom-button" onclick="toggleVideo(2)">
-                                                <img src="images/index_4_img/play_icon.png" alt="play-pause">
-                                            </button>
-                                        </div>
-                                        <div class="vr_content">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a semper
-                                                felis. Pellentesque pretium risus a augue mattis, ac euismod tellus
-                                                dignissim.</p>
-                                            <h3>Morden Sofa</h3>
-                                        </div>
-                                    </div>
-                                    <div class="v_slide">
-                                        <div class="vr_video">
-                                            <video class="s_video" controls>
-                                                <source src="video2.mp4"
-                                                    type="video/mp4">
-                                            </video>
-                                            <button class="custom-button" onclick="toggleVideo(2)">
-                                                <img src="images/index_4_img/play_icon.png" alt="play-pause">
-                                            </button>
-                                        </div>
-                                        <div class="vr_content">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a semper
-                                                felis. Pellentesque pretium risus a augue mattis, ac euismod tellus
-                                                dignissim.</p>
-                                            <h3>Morden Sofa</h3>
-                                        </div>
-                                    </div>
-                                    <!-- Add more slides as needed -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="s_lift_bottom_wrapper">
-            <div class="container-fluid">
-                <div class="s_lift_container">
-                    <div class="row s_lift_row">
-                        <div class="col-lg-7">
-                            <div class="left_img">
-                                <img src="https://placehold.co/1132x619 " alt="img" class="img-fluid">
-                                <img src="https://placehold.co/1132x697 " alt="img"
-                                    class="img-fluid mac_mon_resp">
-                                <img src="https://placehold.co/917x556" alt="img"
-                                    class="img-fluid mac_mon wow fadeInLeft">
-                            </div>
-                        </div>
-                        <div class="col-lg-5">
-                            <div class="cart-product-content right_content">
-                                <div class="cart-product-info wow fadeInUp">
-                                    <h2>Studiofit Light Grey Wooden chair</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus leo sit amet
-                                        lorem egestas iaculis. Donec nibh enim, pharetra vel turpis non, vulputate
-                                        luctus ex. Phasellus pharetra ut dolor ac rutrum.</p>
-                                    <div class="price">
-                                        <span>$25.45</span>
-                                        <del>$35.00</del>
-                                    </div>
-                                    <div class="cart-items-add">
-                                        <div class="quantity">
-                                            <button class="plus-btn" type="button" name="button">
-                                                <i class="fa fa-plus"></i>
-                                            </button>
-                                            <input type="text" name="name" value="1">
-                                            <button class="minus-btn" type="button" name="button">
-                                                <i class="fa fa-minus"></i>
-                                            </button>
-                                        </div>
-                                        <a href="shop-single.html" title="" class="theme-btn">buy now</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="brand_sec">
-            <div class="container-fluid">
+        <section class="brand-section">
+            <div class="container">
+                <div class="sec-title v2 wow fadeInUp">
+                    <h2>trusted our top brand</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus leo sit amet lorem egestas
+                        iaculis. Donec nibh</p>
+                </div><!--sec-title-->
                 <div class="row brands">
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="brand-col wow fadeInLeft">
@@ -2473,6 +2219,74 @@
                                 <h3>free returns</h3>
                             </div>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus leo sit amet </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pt-logos">
+                    <div class="pt-logo wow fadeIn">
+                        <img src="https://placehold.co/220x74" alt="" />
+                    </div>
+                    <div class="pt-logo wow fadeIn" data-wow-delay="300ms">
+                        <img src="https://placehold.co/220x74" alt="" />
+                    </div>
+                    <div class="pt-logo wow fadeIn" data-wow-delay="500ms">
+                        <img src="https://placehold.co/220x74" alt="" />
+                    </div>
+                    <div class="pt-logo wow fadeIn" data-wow-delay="700ms">
+                        <img src="https://placehold.co/220x74" alt="" />
+                    </div>
+                    <div class="pt-logo wow fadeIn" data-wow-delay="900ms">
+                        <img src="https://placehold.co/220x74" alt="" />
+                    </div>
+                </div>
+            </div>
+        </section><!--brand-section-->
+        <section class="i4_video_slider_wrapper">
+            <div class="container-fluid">
+                <div class="i4_video_slider_container">
+                    <div class="i4_video_slider_row row">
+                        <div class="col-lg-5">
+                            <div class="left_content">
+                                <h2>Studiofit Light Grey Wooden chair</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus leo sit amet.</p>
+                                <div class="i4_video_slider_container">
+                                    <div class="v_slider">
+                                        <div class="v_slide">
+                                            <video class="s_video" controls>
+                                                <source src="1105931_1080p_Teenage_Hood_1920x1080.mp4" type="video/mp4">
+                                            </video>
+                                            <button class="custom-button" onclick="toggleVideo(0)">
+                                                <img src="images/index_4_img/play_icon.png" alt="play-pause">
+                                            </button>
+                                        </div>
+                                        <div class="v_slide">
+                                            <video class="s_video" controls>
+                                                <source src="video.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <button class="custom-button" onclick="toggleVideo(1)">
+                                                <img src="images/index_4_img/play_icon.png" alt="play-pause">
+                                            </button>
+                                        </div>
+                                        <div class="v_slide">
+                                            <video class="s_video" controls>
+                                                <source src="video2.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <button class="custom-button" onclick="toggleVideo(2)">
+                                                <img src="images/index_4_img/play_icon.png" alt="play-pause">
+                                            </button>
+                                        </div>
+                                        <!-- Add more slides as needed -->
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="right_img">
+                                <img src="https://placehold.co/993x791" alt="image">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -2673,6 +2487,7 @@
             </div>
         </div>
     </div>
+
     <script src="js/jquery.js"></script>
     <script src="js/jquery-migrate-1.4.1.min.js"></script>
     <script src="js/slick.min.js"></script>
@@ -2687,11 +2502,8 @@
     <script src="js/masonry.pkgd.min.js"
         integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
         async></script>
-    <script src="js/main.js"></script>
+    <script src="js/video.js"></script>
+    <script src="js/custom.js"></script>
     <script src="js/script.js"></script>
- 
-
-
-
 </body>
 </html>

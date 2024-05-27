@@ -4,14 +4,15 @@
 <meta charset="utf-8">
 <title>Glance |  HTML Template | Home Page 01</title>
 <!-- Stylesheets -->
-<link href="css/all.min.css" rel="stylesheet">
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="css/slick.css" rel="stylesheet">
-<link href="css/slick-theme.css" rel="stylesheet">
-<link href="css/swiper-bundle.min.css" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet">
+<link href="{{ asset('css/all.min.css') }}" rel="stylesheet">
+<link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+<link href="{{ asset('css/slick.css') }}" rel="stylesheet">
+<link href="{{ asset('css/slick-theme.css') }}" rel="stylesheet">
+<link href="{{ asset('css/swiper-bundle.min.css') }}" rel="stylesheet">
+<link href="{{ asset('css/style.css') }}" rel="stylesheet">
 
-<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+<link rel="shortcut icon" href="{{ asset("images/favicon.png") }}" type="image/x-icon">
 <link rel="icon" href="images/favicon.png" type="image/x-icon">
 
 <!-- Responsive -->
@@ -64,17 +65,17 @@
                 <ul class="menu-other-links">
                     <li>
                         <a href="#" title="" class="search-btn">
-                            <img src="images/search.png" alt="" />
+                            <img src="{{ asset('images/search.png') }}" alt="" />
                         </a>
                     </li>
                     <li>
                         <a href="#" title="" class="cart-btn">
-                            <img src="images/cart.png" alt="" /> 
+                            <img src="{{ asset('images/cart.png') }}" alt="" /> 
                             <span class="cart-number">5</span>
                         </a>
                     </li>
                     <li>
-                        <a href="login.html" title=""><img src="images/user.svg" alt="" /></a>
+                        <a href="login.html" title=""><img src="{{ asset('images/user.svg') }}" alt="" /></a>
                     </li>
                 </ul>
                 <div class="menu">
@@ -270,7 +271,7 @@
         </div>
         <div class="cart-footer">
             <p><span>Congratulations!</span> You’ve got free shipping</p>
-            <img src="images/progress.png" alt="" />
+            <img src="{{ asset('images/progress.png') }}" alt="" />
             <div class="product-price-total">
                 <strong>Subtotal</strong>
                 <span>$1,547.00.00</span>
@@ -382,11 +383,11 @@
                     <h3>Quisque sagittis risus purus, non lacinia nulla congue non. Etiam in orci egestas neque ultrices tincidunt. Nulla et nunc nunc. In hac habitasse platea dictumst. Ut eget auctor magna.</h3>
                     <ul class="meta">
                         <li>
-                            <img src="images/icons/icon5.svg" alt="">
+                            <img src="{{ asset('images/icons/icon5.svg') }}" alt="">
                             <a href="#" title="">08 July 2022</a>
                         </li>
                         <li>
-                            <img src="images/icons/icon6.svg" alt="">
+                            <img src="{{ asset('images/icons/icon6.svg') }}" alt="">
                             <a href="#" title="">07:41 PM IST</a>
                         </li>
                     </ul>
@@ -435,11 +436,11 @@
                                 <h3><a href="blog-single.html" title="">Nearly 13 Million US Children Infected Since Covid Pandemic</a></h3>
                                 <ul class="meta">
                                     <li>
-                                        <img src="images/icons/icon5.svg" alt="" />
+                                        <img src="{{ asset('images/icons/icon5.svg') }}" alt="" />
                                         <a href="#" title="">08 July 2022</a>
                                     </li>
                                     <li>
-                                        <img src="images/icons/icon6.svg" alt="" />
+                                        <img src="{{ asset('images/icons/icon6.svg') }}" alt="" />
                                         <a href="#" title="">07:41 PM IST</a>
                                     </li>
                                 </ul>
@@ -455,11 +456,11 @@
                                 <h3><a href="blog-single.html" title="">Nearly 13 Million US Children Infected Since Covid Pandemic</a></h3>
                                 <ul class="meta">
                                     <li>
-                                        <img src="images/icons/icon5.svg" alt="" />
+                                        <img src="{{ asset('images/icons/icon5.svg') }}" alt="" />
                                         <a href="#" title="">08 July 2022</a>
                                     </li>
                                     <li>
-                                        <img src="images/icons/icon6.svg" alt="" />
+                                        <img src="{{ asset('images/icons/icon6.svg') }}" alt="" />
                                         <a href="#" title="">07:41 PM IST</a>
                                     </li>
                                 </ul>
@@ -475,11 +476,11 @@
                                 <h3><a href="blog-single.html" title="">Nearly 13 Million US Children Infected Since Covid Pandemic</a></h3>
                                 <ul class="meta">
                                     <li>
-                                        <img src="images/icons/icon5.svg" alt="" />
+                                        <img src="{{ asset('images/icons/icon5.svg') }}" alt="" />
                                         <a href="#" title="">08 July 2022</a>
                                     </li>
                                     <li>
-                                        <img src="images/icons/icon6.svg" alt="" />
+                                        <img src="{{ asset('images/icons/icon6.svg') }}" alt="" />
                                         <a href="#" title="">07:41 PM IST</a>
                                     </li>
                                 </ul>
@@ -495,11 +496,11 @@
                                 <h3><a href="blog-single.html" title="">Nearly 13 Million US Children Infected Since Covid Pandemic</a></h3>
                                 <ul class="meta">
                                     <li>
-                                        <img src="images/icons/icon5.svg" alt="" />
+                                        <img src="{{ asset('images/icons/icon5.svg') }}" alt="" />
                                         <a href="#" title="">08 July 2022</a>
                                     </li>
                                     <li>
-                                        <img src="images/icons/icon6.svg" alt="" />
+                                        <img src="{{ asset('images/icons/icon6.svg') }}" alt="" />
                                         <a href="#" title="">07:41 PM IST</a>
                                     </li>
                                 </ul>
@@ -515,11 +516,11 @@
                                 <h3><a href="blog-single.html" title="">Nearly 13 Million US Children Infected Since Covid Pandemic</a></h3>
                                 <ul class="meta">
                                     <li>
-                                        <img src="images/icons/icon5.svg" alt="" />
+                                        <img src="{{ asset('images/icons/icon5.svg') }}" alt="" />
                                         <a href="#" title="">08 July 2022</a>
                                     </li>
                                     <li>
-                                        <img src="images/icons/icon6.svg" alt="" />
+                                        <img src="{{ asset('images/icons/icon6.svg') }}" alt="" />
                                         <a href="#" title="">07:41 PM IST</a>
                                     </li>
                                 </ul>
@@ -535,11 +536,11 @@
                                 <h3><a href="blog-single.html" title="">Nearly 13 Million US Children Infected Since Covid Pandemic</a></h3>
                                 <ul class="meta">
                                     <li>
-                                        <img src="images/icons/icon5.svg" alt="" />
+                                        <img src="{{ asset('images/icons/icon5.svg') }}" alt="" />
                                         <a href="#" title="">08 July 2022</a>
                                     </li>
                                     <li>
-                                        <img src="images/icons/icon6.svg" alt="" />
+                                        <img src="{{ asset('images/icons/icon6.svg') }}" alt="" />
                                         <a href="#" title="">07:41 PM IST</a>
                                     </li>
                                 </ul>
@@ -555,11 +556,11 @@
                                 <h3><a href="blog-single.html" title="">Nearly 13 Million US Children Infected Since Covid Pandemic</a></h3>
                                 <ul class="meta">
                                     <li>
-                                        <img src="images/icons/icon5.svg" alt="" />
+                                        <img src="{{ asset('images/icons/icon5.svg') }}" alt="" />
                                         <a href="#" title="">08 July 2022</a>
                                     </li>
                                     <li>
-                                        <img src="images/icons/icon6.svg" alt="" />
+                                        <img src="{{ asset('images/icons/icon6.svg') }}" alt="" />
                                         <a href="#" title="">07:41 PM IST</a>
                                     </li>
                                 </ul>
@@ -575,11 +576,11 @@
                                 <h3><a href="blog-single.html" title="">Nearly 13 Million US Children Infected Since Covid Pandemic</a></h3>
                                 <ul class="meta">
                                     <li>
-                                        <img src="images/icons/icon5.svg" alt="" />
+                                        <img src="{{ asset('images/icons/icon5.svg') }}" alt="" />
                                         <a href="#" title="">08 July 2022</a>
                                     </li>
                                     <li>
-                                        <img src="images/icons/icon6.svg" alt="" />
+                                        <img src="{{ asset('images/icons/icon6.svg') }}" alt="" />
                                         <a href="#" title="">07:41 PM IST</a>
                                     </li>
                                 </ul>
@@ -595,11 +596,11 @@
                                 <h3><a href="blog-single.html" title="">Nearly 13 Million US Children Infected Since Covid Pandemic</a></h3>
                                 <ul class="meta">
                                     <li>
-                                        <img src="images/icons/icon5.svg" alt="" />
+                                        <img src="{{ asset('images/icons/icon5.svg') }}" alt="" />
                                         <a href="#" title="">08 July 2022</a>
                                     </li>
                                     <li>
-                                        <img src="images/icons/icon6.svg" alt="" />
+                                        <img src="{{ asset('images/icons/icon6.svg') }}" alt="" />
                                         <a href="#" title="">07:41 PM IST</a>
                                     </li>
                                 </ul>

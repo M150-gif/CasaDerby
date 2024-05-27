@@ -2,17 +2,17 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Glance |  HTML Template | Home Page 01</title>
+<title>CasaDerby | Home Page 01</title>
 <!-- Stylesheets -->
-<link href="css/all.min.css" rel="stylesheet">
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="css/slick.css" rel="stylesheet">
-<link href="css/slick-theme.css" rel="stylesheet">
-<link href="css/swiper-bundle.min.css" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet">
+<link href="{{ asset('"css/all.min.css"') }}" rel="stylesheet">
+<link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+<link href="{{ asset('css/slick.css') }}"  rel="stylesheet">
+<link href="{{ asset('css/slick-theme.css') }}"  rel="stylesheet">
+<link href="{{ asset('css/swiper-bundle.min.css')}}" rel="stylesheet">
+<link href="{{ asset('css/style.css') }}" rel="stylesheet">
 
-<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-<link rel="icon" href="images/favicon.png" type="image/x-icon">
+<link rel="shortcut icon" href="{{ asset('images/favicon.png') }}" type="image/x-icon">
+<link rel="icon" href="{{ asset('images/favicon.png') }}" type="image/x-icon">
 
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -32,7 +32,7 @@
             <div class="header-content">
                 <div class="logo">
                     <a href="index.html" title="">
-                        <img src="images/logo.png" alt="" /> 
+                        <img src="{{ asset('images/logo.png') }}" alt="" /> 
                     </a>
                 </div>
                 <div class="header-social">
@@ -50,12 +50,12 @@
                 <ul class="menu-other-links">
                     <li>
                         <a href="#" title="" class="search-btn">
-                            <img src="images/search.png" alt="" />
+                            <img src="{{ asset('images/search.png') }}" alt="" />
                         </a>
                     </li>
                     <li>
                         <a href="#" title="" class="cart-btn">
-                            <img src="images/cart.png" alt="" /> 
+                            <img src="{{ asset('images/cart.png') }}""" alt="" /> 
                             <span class="cart-number">5</span>
                         </a>
                     </li>
@@ -80,7 +80,7 @@
                 <a href="index.html" title="">women</a>
             </li>
             <li>
-                <a href="index-2.html" title="">man</a>
+                <a href="index-2.html" title="">men</a>
             </li>
             <li>
                 <a href="index-3.html" title="">kids</a>
@@ -117,12 +117,12 @@
         </ul>
         <div class='marquee3' data-duration='60000' data-gap='0' data-duplicated='true' >
             <ul>
-                <li>Glance</li>
-                <li>Glance</li>
-                <li>Glance</li>
-                <li>Glance</li>
-                <li>Glance</li>
-                <li>Glance</li>
+                <li>CasaDerby</li>
+                <li>CasaDerby</li>
+                <li>CasaDerby</li>
+                <li>CasaDerby</li>
+                <li>CasaDerby</li>
+                <li>CasaDerby</li>
             </ul>
         </div>
     </div><!--overlay-menu-->
@@ -134,7 +134,7 @@
         <div class='marquee' data-duration='17000' data-gap='10' data-duplicated='true' >
             <h2>404  404  404  404  404  404 404 404 404</h2>
         </div>
-        <h2 class="error-page-title">glance</h2>
+        <h2 class="error-page-title">CasaDerby</h2>
     </div><!--error-page-->
 
 </div><!-- End Page Wrapper -->
@@ -142,18 +142,18 @@
 <!-- Scroll To Top -->
 <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
 
-<script src="js/jquery.js"></script> 
-<script src="js/jquery-migrate-1.4.1.min.js"></script>
-<script src="js/slick.min.js"></script>
-<script src="js/slick-animation.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.fancybox.js"></script>
-<script src="js/wow.js"></script>
-<script src="js/appear.js"></script>
-<script src="js/swiper-bundle.min.js"></script>
-<script src="js/jquery.marquee.min.js"></script>
-<script src="js/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
-<script src="js/script.js"></script>
+<script src="asset('js/jquery.js')"></script> 
+<script src="asset('js/jquery-migrate-1.4.1.min.js')"></script>
+<script src="asset('js/slick.min.js')"></script>
+<script src="asset('js/slick-animation.min.js')"></script>
+<script src="asset('js/popper.min.js')"></script>
+<script src="asset('js/bootstrap.min.js')"></script>
+<script src="asset('js/jquery.fancybox.js')"></script>
+<script src="asset('js/wow.js')"></script>
+<script src="asset('js/appear.js')"></script>
+<script src="asset('js/swiper-bundle.min.js')"></script>
+<script src="asset('js/jquery.marquee.min.js')"></script>
+<script src="asset('js/masonry.pkgd.min.js')" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+<script src="asset('js/script.js')"></script>
 </body>
 </html>
