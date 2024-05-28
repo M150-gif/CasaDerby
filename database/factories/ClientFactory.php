@@ -12,17 +12,21 @@ class ClientFactory extends Factory
      *
      * @var string
      */
-    protected $model = Client::class;
 
     /**
      * Define the model's default state.
      *
      * @return array
      */
+    protected $model = Client::class;
+
     public function definition()
     {
         return [
-            // Define the structure of your Client model here
+            'nom' => $this->faker->name,
+            'prenom' => $this->faker->lastName,
+            'email' => $this->faker->unique()->safeEmail,
+            'adresse' => $this->faker->address,
         ];
     }
 }

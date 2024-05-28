@@ -531,29 +531,29 @@
     <section class="main-slider-v2">
         <div class="slider-nav">
             <div class="main-slider-slide">
-                <img src="https://placehold.co/1920x940" alt=""  class="animated" data-animation-in="zoomInImage" />
+                <img src="{{asset('store/site_web/images/produits/wac/tenue2.png')}}" alt=""  class="animated" data-animation-in="zoomInImage" />
                 <div class="main-slider-content">
-                    <span>Haute Couture</span>
-                    <h1>salam</h1>
-                    <p>Porem ipsum dolor sit amet consectetur </p>
+                    <span></span>
+                    <h1>Wydad Athletic Club</h1>
+                    <p>t-shirt</p>
                     <a href="shop-single.html" title="" class="theme-btn">buy now</a>
                 </div>
             </div><!--main-slider-slide-->
             <div class="main-slider-slide">
-                <img src="{{asset('store/site_web/images/produits/wac/sweatshirt2.png')}}" alt=""  class="animated" data-animation-in="zoomInImage" />
+                <img src="{{asset('store/site_web/images/produits/wac/wydad_slider.jpg')}}" alt=""  class="animated" data-animation-in="zoomInImage" />
                 <div class="main-slider-content">
                     <span>Haute Couture</span>
-                    <h1>New Arrivals</h1>
-                    <p>Porem ipsum dolor sit amet consectetur </p>
+                    <h1>Wydad Athletic Club</h1>
+                    <p>t-shirt</p>
                     <a href="shop-single.html" title="" class="theme-btn">buy now</a>
                 </div>
             </div><!--main-slider-slide-->
             <div class="main-slider-slide">
-                <img src="https://placehold.co/1920x940" alt=""  class="animated" data-animation-in="zoomInImage" />
+                <img src="{{asset('store/site_web/images/produits/rca/slider_rca.jpg')}}" alt=""  class="animated" data-animation-in="zoomInImage" />
                 <div class="main-slider-content">
-                    <span>Haute Couture</span>
-                    <h1>New Arrivals</h1>
-                    <p>Porem ipsum dolor sit amet consectetur </p>
+                    <span></span>
+                    <h1>Raja Athletic Club</h1>
+                    <p>-shirt</p>
                     <a href="shop-single.html" title="" class="theme-btn">buy now</a>
                 </div>
             </div><!--main-slider-slide-->
@@ -578,27 +578,27 @@
                 <div class="lookbook-v2 row">
                     <div class="col-lg-3 col-md-3 col-sm-3 col-3">
                         <div class="lookbook-inner wow fadeIn" data-wow-delay="200ms">
-                            <img src="https://placehold.co/419x645" alt="" />
+                            <img src="{{asset('store/site_web/images/produits/wac/tenue 1.png')}}" alt="" />
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-3 col-3">
                         <div class="lookbook-inner wow fadeIn" data-wow-delay="400ms">
-                            <img src="https://placehold.co/419x645" alt="" />
+                            <img src="{{asset('store/site_web/images/produits/wac/sweatshirt 3.png')}}" alt="" />
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-3 col-3">
                         <div class="lookbook-inner wow fadeIn" data-wow-delay="600ms">
-                            <img src="https://placehold.co/419x645" alt="" />
+                            <img src="{{asset('store/site_web/images/produits/wac/sweatshirt 1.png')}}" alt="" />
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-3 col-3">
                         <div class="lookbook-inner wow fadeIn" data-wow-delay="800ms">
-                            <img src="https://placehold.co/419x645" alt="" />
+                            <img src="{{asset('store/site_web/images/produits/wac/tenue2.png')}}" alt="" />
                         </div>
                     </div>
 
                 </div>
-                <h1 class="pb-text wow slideInUp">lookbook</h1>
+                <h1 class="pb-text wow slideInUp">buy your one now</h1>
             </div>
         </div>
     </section><!--lookbook-section-v2-->
@@ -612,7 +612,7 @@
     <section class="category-section-v2">
         <div class="container-full">
             <div class="sec-title space-v2 wow fadeInUp">
-                <h2>GLANCE Category</h2>
+                <h2>All Categories</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus leo sit amet lorem egestas iaculis. Donec nibh enim, pharetra vel turpis</p>
             </div>
             <div class="categories-v2">
@@ -624,15 +624,15 @@
                                     <div class="col-lg-6 col-md-6">
                                         <div class="category-v2">
                                             <div class="category-v2-img">
-                                                <img src="https://placehold.co/873x436" alt="" />
+                                                <img src="{{asset('store/site_web/images/produits/rca/rca_vantage.jpeg')}}" alt="" />
                                             </div>
-                                            <h3><a href="shop-single.html" title="">Men Clothing</a></h3>
+                                            <h3><a href="shop-single.html" title="">t-shirt</a></h3>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6">
                                         <div class="category-v2">
                                             <div class="category-v2-img">
-                                                <img src="https://placehold.co/873x436" alt="" />
+                                                <img src="{{asset('store/site_web/images/produits/rca/rca_vantage.jpeg')}}" alt="" />
                                             </div>
                                             <h3><a href="shop-single.html" title="">Men's Grooming</a></h3>
                                         </div>
@@ -640,7 +640,7 @@
                                     <div class="col-lg-4 col-md-4">
                                         <div class="category-v2">
                                             <div class="category-v2-img">
-                                                <img src="https://placehold.co/549x434" alt="" />
+                                                <img src="{{asset('store/site_web/images/produits/rca/rca_vantage.jpeg')}}" alt="" />
                                             </div>
                                             <h3><a href="shop-single.html" title="">Innerwear & Loungewear</a></h3>
                                         </div>
@@ -656,7 +656,7 @@
                                     <div class="col-lg-4 col-md-4">
                                         <div class="category-v2">
                                             <div class="category-v2-img">
-                                                <img src="https://placehold.co/549x434" alt="" />
+                                                <img src="{{asset('store/site_web/images/produits/rca/rca_vantage.jpeg')}}" alt="" />
                                             </div>
                                             <h3><a href="shop-single.html" title="">Sunglasses</a></h3>
                                         </div>
@@ -664,7 +664,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
+                        <!-- <div class="swiper-slide">
                             <div class="category-slide">
                                 <div class="row">
                                     <div class="col-lg-6 col-md-6">
@@ -893,7 +893,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                     <!-- scrollbar -->
                     <div class="swiper-scrollbar v3">
@@ -1030,13 +1030,100 @@
         <div class="container-fluid">
             <div class="sec-title space-v2 wow slideInUp">
                 <h2>new collection</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus leo sit amet lorem egestas iaculis. Donec nibh enim, pharetra vel turpis</p>
+                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus leo sit amet lorem egestas iaculis. Donec nibh enim, pharetra vel turpis</p> -->
             </div>
             <div class="product-categories v2 without-slide row">
                 <div class="col-lg-2">
                     <div class="product-cat">
                         <div class="product-img">
-                            <img src="https://placehold.co/263x358" alt="">
+                            <img src="{{asset('store/site_web/images/produits/rca/rca_vantage.jpeg')}}" alt="">
+                            <span class="pro-category">new</span>
+                        </div>
+                        <div class="product-hover-info">
+                            <div class="product-hover-head">
+                                <ul class="pt-links">
+                                    <li>new</li>
+                                    <li>sales</li>
+                                </ul>
+                                <a href="#" title="" class="fvrt-product"><img src="{{asset('store/site_web/images/produits/wac/tenue2.png')}}" alt="" /></a>
+                            </div>
+                            <div class="product-info-hover">
+                                <h3><a href="shop-single.html" title="">Casual Jacket</a></h3>
+                                <span>Loues Vuitto</span>
+                                <div class="pricee">
+                                    <span>$25.45</span>
+                                </div>
+                                <ul class="pro-colors">
+                                    <li class="clr1"></li>
+                                    <li class="clr2"></li>
+                                    <li class="clr3"></li>
+                                    <li class="clr4"></li>
+                                </ul>
+                                <ul class="variations">
+                                    <li>s</li>
+                                    <li>m</li>
+                                    <li>l</li>
+                                </ul>
+                                <ul class="pro-buttons">
+                                    <li><a href="#" title="" class="theme-btn">quick add</a></li>
+                                    <li><a href="#" title="" class="theme-btn quick-view-btn">quick view</a></li>
+                                </ul>
+                            </div>
+                        </div><!--product-hover-info-->
+                        <div class="product-info">
+                            <h3><a href="shop-single.html" title="">Casual Jacket</a></h3>
+                            <span class="product-price">$25.45</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="product-cat">
+                        <div class="product-img">
+                            <img src="{{asset('store/site_web/images/produits/rca/rca_vantage.jpeg')}}" alt="">
+                            <span class="pro-category">new</span>
+                        </div>
+                        <div class="product-hover-info">
+                            <div class="product-hover-head">
+                                <ul class="pt-links">
+                                    <li>new</li>
+                                    <li>sales</li>
+                                </ul>
+                                <a href="#" title="" class="fvrt-product"><img src="
+images/icons/heart.svg" alt="" /></a>
+                            </div>
+                            <div class="product-info-hover">
+                                <h3><a href="shop-single.html" title="">Casual Jacket</a></h3>
+                                <span>Loues Vuitto</span>
+                                <div class="pricee">
+                                    <span>$25.45</span>
+                                </div>
+                                <ul class="pro-colors">
+                                    <li class="clr1"></li>
+                                    <li class="clr2"></li>
+                                    <li class="clr3"></li>
+                                    <li class="clr4"></li>
+                                </ul>
+                                <ul class="variations">
+                                    <li>s</li>
+                                    <li>m</li>
+                                    <li>l</li>
+                                </ul>
+                                <ul class="pro-buttons">
+                                    <li><a href="#" title="" class="theme-btn">quick add</a></li>
+                                    <li><a href="#" title="" class="theme-btn quick-view-btn">quick view</a></li>
+                                </ul>
+                            </div>
+                        </div><!--product-hover-info-->
+                        <div class="product-info">
+                            <h3><a href="shop-single.html" title="">Casual Jacket</a></h3>
+                            <span class="product-price">$25.45</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="product-cat">
+                        <div class="product-img">
+                            <img src="{{asset('store/site_web/images/produits/rca/rca_vantage.jpeg')}}" alt="">
                             <span class="pro-category">new</span>
                         </div>
                         <div class="product-hover-info">
@@ -1088,111 +1175,7 @@
                 <div class="col-lg-2">
                     <div class="product-cat">
                         <div class="product-img">
-                            <img src="https://placehold.co/263x358" alt="">
-                            <span class="pro-category">new</span>
-                        </div>
-                        <div class="product-hover-info">
-                            <div class="product-hover-head">
-                                <ul class="pt-links">
-                                    <li>new</li>
-                                    <li>sales</li>
-                                </ul>
-                                <a href="#" title="" class="fvrt-product"><img src="
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                images/icons/heart.svg" alt="" /></a>
-                            </div>
-                            <div class="product-info-hover">
-                                <h3><a href="shop-single.html" title="">Casual Jacket</a></h3>
-                                <span>Loues Vuitto</span>
-                                <div class="pricee">
-                                    <span>$25.45</span>
-                                </div>
-                                <ul class="pro-colors">
-                                    <li class="clr1"></li>
-                                    <li class="clr2"></li>
-                                    <li class="clr3"></li>
-                                    <li class="clr4"></li>
-                                </ul>
-                                <ul class="variations">
-                                    <li>s</li>
-                                    <li>m</li>
-                                    <li>l</li>
-                                </ul>
-                                <ul class="pro-buttons">
-                                    <li><a href="#" title="" class="theme-btn">quick add</a></li>
-                                    <li><a href="#" title="" class="theme-btn quick-view-btn">quick view</a></li>
-                                </ul>
-                            </div>
-                        </div><!--product-hover-info-->
-                        <div class="product-info">
-                            <h3><a href="shop-single.html" title="">Casual Jacket</a></h3>
-                            <span class="product-price">$25.45</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2">
-                    <div class="product-cat">
-                        <div class="product-img">
-                            <img src="https://placehold.co/289x392" alt="">
-                            <span class="pro-category">new</span>
-                        </div>
-                        <div class="product-hover-info">
-                            <div class="product-hover-head">
-                                <ul class="pt-links">
-                                    <li>new</li>
-                                    <li>sales</li>
-                                </ul>
-                                <a href="#" title="" class="fvrt-product"><img src="
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                images/icons/heart.svg" alt="" /></a>
-                            </div>
-                            <div class="product-info-hover">
-                                <h3><a href="shop-single.html" title="">Casual Jacket</a></h3>
-                                <span>Loues Vuitto</span>
-                                <div class="pricee">
-                                    <span>$25.45</span>
-                                </div>
-                                <ul class="pro-colors">
-                                    <li class="clr1"></li>
-                                    <li class="clr2"></li>
-                                    <li class="clr3"></li>
-                                    <li class="clr4"></li>
-                                </ul>
-                                <ul class="variations">
-                                    <li>s</li>
-                                    <li>m</li>
-                                    <li>l</li>
-                                </ul>
-                                <ul class="pro-buttons">
-                                    <li><a href="#" title="" class="theme-btn">quick add</a></li>
-                                    <li><a href="#" title="" class="theme-btn quick-view-btn">quick view</a></li>
-                                </ul>
-                            </div>
-                        </div><!--product-hover-info-->
-                        <div class="product-info">
-                            <h3><a href="shop-single.html" title="">Casual Jacket</a></h3>
-                            <span class="product-price">$25.45</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2">
-                    <div class="product-cat">
-                        <div class="product-img">
-                            <img src="https://placehold.co/263x358" alt="">
+                            <img src="{{asset('store/site_web/images/produits/rca/rca_vantage.jpeg')}}" alt="">
                             <span class="pro-category">new</span>
                         </div>
                         <div class="product-hover-info">
@@ -1235,7 +1218,7 @@
                 <div class="col-lg-2">
                     <div class="product-cat">
                         <div class="product-img">
-                            <img src="https://placehold.co/263x358" alt="">
+                            <img src="{{asset('store/site_web/images/produits/rca/rca_vantage.jpeg')}}" alt="">
                             <span class="pro-category">new</span>
                         </div>
                         <div class="product-hover-info">
@@ -1287,7 +1270,7 @@
                 <div class="col-lg-2">
                     <div class="product-cat">
                         <div class="product-img">
-                            <img src="https://placehold.co/263x358" alt="">
+                            <img src="{{asset('store/site_web/images/produits/rca/rca_vantage.jpeg')}}" alt="">
                             <span class="pro-category">new</span>
                         </div>
                         <div class="product-hover-info">
@@ -1339,7 +1322,7 @@
                 <div class="col-lg-2">
                     <div class="product-cat">
                         <div class="product-img">
-                            <img src="https://placehold.co/263x358" alt="">
+                            <img src="{{asset('store/site_web/images/produits/rca/rca_vantage.jpeg')}}" alt="">
                             <span class="pro-category">new</span>
                         </div>
                         <div class="product-hover-info">
@@ -1391,7 +1374,7 @@
                 <div class="col-lg-2">
                     <div class="product-cat">
                         <div class="product-img">
-                            <img src="https://placehold.co/263x358" alt="">
+                            <img src="{{asset('store/site_web/images/produits/rca/rca_vantage.jpeg')}}" alt="">
                             <span class="pro-category">new</span>
                         </div>
                         <div class="product-hover-info">
@@ -1443,7 +1426,7 @@
                 <div class="col-lg-2">
                     <div class="product-cat">
                         <div class="product-img">
-                            <img src="https://placehold.co/263x358" alt="">
+                            <img src="{{asset('store/site_web/images/produits/rca/rca_vantage.jpeg')}}" alt="">
                             <span class="pro-category">new</span>
                         </div>
                         <div class="product-hover-info">
@@ -1495,7 +1478,7 @@
                 <div class="col-lg-2">
                     <div class="product-cat">
                         <div class="product-img">
-                            <img src="https://placehold.co/263x358" alt="">
+                            <img src="{{asset('store/site_web/images/produits/rca/rca_vantage.jpeg')}}" alt="">
                             <span class="pro-category">new</span>
                         </div>
                         <div class="product-hover-info">

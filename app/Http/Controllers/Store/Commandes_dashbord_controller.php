@@ -13,8 +13,8 @@ class Commandes_dashbord_controller extends Controller
      */
     public function index()
     {
-        $commandes=commande::all();
-        return view('store.dashbord.commandes.index',compact('commandes'));
+        $commandes = Commande::with('client')->paginate(10);
+        return view('store.dashbord.commandes.index', compact('commandes'));
     }
 
     /**

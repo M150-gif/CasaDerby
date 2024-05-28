@@ -1,4 +1,3 @@
-/* styles.css */
 
 body {
     font-family: Arial, sans-serif;
@@ -13,15 +12,30 @@ body {
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
     padding: 10px 20px;
+    height: 90px;
 }
 
 .navbar .title a {
-    color: white;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 40px;
+    color: white;
 }
 
-.navbar .shop-button a {
+.shop-button a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.shop-button a:hover {
+    background-color: green;
+    color: white;
+}
+.wac-button a {
     color: white;
     text-decoration: none;
     padding: 10px 20px;
@@ -31,13 +45,27 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.navbar .shop-button a:hover {
-    background-color: green;
+.wac-button a:hover {
+    background-color: rgb(1, 114, 56);
+}
+.rca-button a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: rgb(1, 114, 56);
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.rca-button a:hover {
+    background-color: red;
 }
 
 .images-container {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap; /* Allow wrapping of images */
 }
 
 .images-container a {
@@ -45,9 +73,9 @@ body {
 }
 
 .team-image {
-    width: 500px;  /* Increased width */
+    width: 428px;  /* Increased width */
     height: 500px; /* Increased height */
-    border-radius: 50%; /* Circular border */
+    border-radius: 20%; /* Circular border */
     transition: transform 0.3s ease;
     object-fit: cover;  /* Ensure images fill the area without distortion */
     position: relative;
@@ -71,18 +99,111 @@ body {
 
 @keyframes neon-red {
     0%, 100% {
-        box-shadow: 0 0 5px red, 0 0 10px red, 0 0 15px red, 0 0 20px red;
+        box-shadow: 0 0 10px red, 0 0 10px red, 0 0 15px red, 0 0 20px red;
     }
     50% {
-        box-shadow: 0 0 20px red, 0 0 30px red, 0 0 40px red, 0 0 50px red;
+        box-shadow: 0 0 30px red, 0 0 40px red, 0 0 50px red, 0 0 60px red;
     }
 }
 
 @keyframes neon-green {
     0%, 100% {
-        box-shadow: 0 0 5px green, 0 0 10px green, 0 0 15px green, 0 0 20px green;
+        box-shadow: 0 0 10px green, 0 0 10px green, 0 0 15px green, 0 0 20px green;
+        animation: glowImage 2.5s linear infinite alternate;
     }
     50% {
-        box-shadow: 0 0 20px green, 0 0 30px green, 0 0 40px green, 0 0 50px green;
+        box-shadow: 0 0 30px green, 0 0 40px green, 0 0 50px green, 0 0 60px green;
+        animation: glowImage 2.5s linear infinite alternate;
+    }
+}
+
+.raja {
+    margin: 50px;
+    border-radius: 50%;
+    width: 430px;
+    height: 380px;
+    animation: neon-green 3s infinite;
+}
+
+.rcaImg {
+    margin-top: -56px;
+    width: 430px;
+    height: 500px;
+    
+}
+
+.wydad {
+    margin: 50px;
+    border-radius: 50%;
+    width: 430px;
+    height: 380px;
+    animation: neon-red 3s infinite;
+}
+
+.wacImg {
+    margin-top: -65px;
+    width: 430px;
+    height: 500px;
+}
+
+@keyframes glowImage {
+    to {
+        filter: brightness(2);
+    }
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 1200px) {
+    .wydad {
+        margin-top: 100px;
+    }
+    .wacImg {
+        margin-top: -65px; 
+    }
+    
+}
+
+@media (max-width: 768px) {
+   
+    .images-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .team-image, .raja, .wydad {
+        width: 300px;
+        height: 350px;
+    }
+    
+    .wydad {
+        margin-top: 100px;
+    }
+    .wacImg {
+        margin-top: -57px; 
+        width: 300px;
+        height: 452px;
+    }
+    .rcaImg {
+        margin-top: -49px;
+        height: 454px; 
+        width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar .title a {
+        font-size: 18px;
+    }
+    .navbar .shop-button a {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+    .team-image, .raja, .wydad {
+        width: 200px;
+        height: 250px;
+    }
+    .rcaImg, .wacImg {
+        width: 200px;
+        height: 250px;
     }
 }

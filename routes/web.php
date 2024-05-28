@@ -8,6 +8,8 @@ use App\Http\Controllers\Store\Admin_store;
 use App\Http\Controllers\Store\Product_dashbord_controller;
 use App\Http\Controllers\Store\CategorieController;
 use App\Http\Controllers\Store\Commandes_dashbord_controller;
+use App\Http\Controllers\Equipe\admin_equipe_rca;
+use App\Http\Controllers\Equipe\EquipeController;
 use App\Models\Product;
 
 //accuiel//////////////////////////////////////////////////////////////////
@@ -29,7 +31,7 @@ Route::middleware(['auth','admins_logout'])->group(function () {
 });
 //admin_dashbord_store/////////////////////////////////////////////////////
         // midlleware_admin_store
-    Route::middleware(['auth','admin_store'])->group(function () {
+        Route::middleware(['auth','admin_store'])->group(function () {
         Route::prefix('/admin_store')->group(function(){
             //crud_clients
             Route::controller(ClientCrudController::class)->group(function () {
@@ -77,7 +79,6 @@ Route::prefix('/store')->group(function(){
         Route::get('/profile', function(){
         return view('store/Home');
     })->name('display_profile');
-    
 });
 //admin_dashbord_equiep_wac////////////////////////////////////////////////
  // midlleware_admin_equipe_wac
@@ -89,18 +90,47 @@ Route::prefix('/store')->group(function(){
     });
 });
 //admin_dashbord_equiep_rca/////////////////////////////////////////////////
- // midlleware_admin_equipe_rca
- Route::middleware(['auth','admin_equipe_rca'])->group(function () {
-    Route::controller(ClientCrudController::class)->group(function () {
-        Route::prefix('/admin_equipe_rca')->group(function(){
-        Route::get('/','index')->name('admin_equipe_rca');
+
+Route::middleware(['auth','admin_equipe_rca'])->group(function () {
+  Route::prefix('/admin_equipe_rca')->group(function(){
+     Route::controller(admin_equipe_rca::class)->group(function () {
+        Route::get('/','dashboard')->name('dashbord_admin_rca');
+
         });
     });
+    Route::controller(EquipeController::class)->group(function(){
+           Route::get('/equipes',function(){
+            return view('equipe.dashbord.dashbord_rca.equipes.index');
+           })->name('afficher_list_equipe');
    });
+});
+
+//store(site web)//////////////////////////////////////////////////////////////
+// Route::middleware('auth')->group(function () {
+
+    Route::get('/casadebrystore', function(){
+        return view('store/site_web/index');
+    })->name('store_home');
+// });
 //equipe(site web)//////////////////////////////////////////////////////////////
 // Route::middleware('auth')->group(function () {
 
 // });
-Route::get('/casadebrystore', function(){
-    return view('store/site_web/index');
-})->name('store_home');
+////////////////////////////////////////////////////////////////////////////////////
+/*wac*/
+Route::get('/wac', function(){
+    return view('equipe.site_web.wac.wacindex');
+});
+/*raja*/ 
+Route::get('/rca', function(){
+    return view('equipe.site_web.rca.rcaindex');
+});
+Route::get('/rca/actualites', function(){
+    return view('equipe.site_web.rca.rcaactualites');
+});
+Route::get('/rca/palmares', function(){
+    return view('equipe.site_web.rca.rcapalmares');
+});
+Route::get('/rca/joueurs', function(){
+    return view('equipe.site_web.rca.rcajoueurs');
+});

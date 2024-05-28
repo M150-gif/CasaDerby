@@ -49,8 +49,9 @@ class userseed extends Seeder
             [
                 'name' => 'Admin Store',
                 'last name' =>'Store',
-                'email' => 'adminstore@exampl.com',
+                'email' => 'adminstore@examplwq.com',
                 'role' => 'admin_store',
+                'profile_image'=>null,
                 'email_verified_at' => now(),
                 'password' => Hash::make('password1236f'), // Change this to a secure password
                 'remember_token' => Str::random(10),

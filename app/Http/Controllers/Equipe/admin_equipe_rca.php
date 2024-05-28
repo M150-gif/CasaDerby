@@ -1,18 +1,19 @@
 <?php
 
 namespace App\Http\Controllers\Equipe;
+
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
-class admin_equipe_wac extends Controller
+class admin_equipe_rca extends Controller
 {
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function dashboard()
     {
-        return view('equipe.dashbord.layouts.template');
+        return view('equipe.dashbord.dashbord_rca.dashbord');
     }
 
     /**

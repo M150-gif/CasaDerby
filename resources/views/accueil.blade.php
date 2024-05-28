@@ -13,19 +13,34 @@
                 <a href="accueil.html">CasaDerby</a>
             </div>
             <div class="shop-button">
-                <a href="shop.html">Shop</a>
+                <a href="{{route('store_home')}}">CasaDerby Shop</a>
             </div>
         </nav>
     </header>
     <main>
         <div class="images-container">
-            <a href="team1.html">
-                <img src="wac.png" alt="Team 1" class="team-image team1-image">
-            </a>
-            <a href="team2.html">
-                <img src="rca.png" alt="Team 2" class="team-image team2-image">
-            </a>
+            <div class="raja">
+                <img src="images/rca/rca.png" alt="RCA" class="rcaImg">
+                <br></br>
+                <br></br>
+                <center>
+                <div class="rca-button" >
+                    <a href="{{ url('/rca') }}">Raja Club Athletic</a>
+                </div>
+                </center>
+            </div>
+            <div class="wydad">
+                <img src="images/wac/wac.png" alt="WAC" class="wacImg">
+                <br></br>
+                <br></br>
+                <center>
+                    <div class="wac-button" >
+                        <a href="{{ url('/wac') }}">Wydad Athletic Club</a>
+                    </div>
+                </center>
+            </div>
         </div>
+        
     </main>
 </body>
 </html>

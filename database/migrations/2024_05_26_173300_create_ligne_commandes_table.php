@@ -18,8 +18,8 @@ public function up()
         $table->unsignedBigInteger('product_id');
         $table->integer('qte_commande');
         $table->decimal('prix_par_ligne', 8, 2);
-        $table->foreign('commande_id')->references('commande_id')->on('commandes');
-        $table->foreign('product_id')->references('product_id')->on('products');
+        $table->foreign('commande_id')->references('id')->on('commandes')->onDelete('cascade');
+        $table->foreign('product_id')->references('id')->on('products')->onDelete('cascade');
         $table->timestamps();
     });
 }

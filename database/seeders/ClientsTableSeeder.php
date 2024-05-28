@@ -18,7 +18,7 @@ class ClientsTableSeeder extends Seeder
         Client::create([
             'nom' => 'John', // Provide a value for the 'nom' column
             'prenom' => 'Doe',
-            'email' => 'john@example.com',
+            'email' => 'john@examp212.com',
             'adresse' => '123 Street, City',
         ]);
 

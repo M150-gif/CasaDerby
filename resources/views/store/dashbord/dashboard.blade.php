@@ -1,5 +1,4 @@
 @extends('store.dashbord.layouts.template')
-
 @section('content')
 <h1 class="app-page-title">Dashboard</h1>
 <div class="row mt-2 mb-2 p-2">

@@ -29,15 +29,18 @@
                         <option value="option-4">Last 3 months</option>
                     </select>
                 </div>
+                <div class="col-auto">
+                    <a class="btn app-btn-secondary" href="{{ route('commandes.create') }}">
+                        Ajouter Commande
+                    </a>
+                </div>
             </div><!--//row-->
-
         </div><!--//table-utilities-->
     </div><!--//col-auto-->
     @if (Session::get('success_message'))
     <div class="alert alert-success">{{ Session::get('success_message') }}</div>
     @endif
 </div><!--//row-->
-
 
 <div class="tab-content" id="Commandes-table-tab-content">
     <div class="tab-pane fade show active" id="Commandes-all" role="tabpanel" aria-labelledby="Commandes-all-tab">
@@ -48,41 +51,38 @@
                         <thead>
                             <tr>
                                 <th class="cell">#</th>
-                                <th class="cell">Nom</th>
-                                <th class="cell">date</th>
-                                <th class="cell">prix</th>
-                                <th class="cell">description</th>
-                                <th class="cell">action</th>
+                                <th class="cell">Nom du Client</th>
+                                <th class="cell">Prix Total</th>
+                                <th class="cell">Date</th>
+                                <th class="cell">Actions</th>
                             </tr>
                         </thead>
                         <tbody>
-                            @forelse ($Commandes as $Commande)
+                            @forelse ($commandes as $commande)
                             <tr>
-                                <td class="cell">{{ $Commande->id }}</td>
-                                <td class="cell">{{ $Commande->nom }}</td>
-                                <td class="cell">{{ $Commande->quantite }}</td>
-                                <td class="cell">{{ $Commande->prix }}</td>
-                                <td class="cell">{{ $Commande->description }}</td>
+                                <td class="cell">{{ $commande->id }}</td>
+                                <td class="cell">{{ $commande->client->name }}</td>
+                                <td class="cell">{{ $commande->price_totale }}</td>
+                                <td class="cell">{{ $commande->created_at->format('d/m/Y') }}</td>
                                 <td class="cell">
-                                        
-                                        <form method="GET" action="{{ route('Commandes.edit', $Commande->id) }}">
+                                    <form method="GET" action="{{ route('commandes.edit', $commande->id) }}">
                                         @csrf  
                                         <button type="submit" class="btn-sm app-btn-secondary" style="margin-right: 5px; border-radius: 0;">Editer</button>
-                                        </form>
-                                        <form method="POST" action="{{ route('Commandes.destroy', $Commande->id) }}" onsubmit="return confirm('Are you sure you want to delete this Commande?')">
+                                    </form>
+                                    <form method="POST" action="{{ route('commandes.destroy', $commande->id) }}" onsubmit="return confirm('Are you sure you want to delete this Commande?')">
                                         @csrf   
                                         @method('DELETE') 
                                         <button type="submit" class="btn-sm app-btn-secondary" style="margin-right: 5px; border-radius: 0;">Retirer</button>
-                                        </form>
-                                        <form method="GET" action="{{ route('Commandes.show', $Commande->id) }}">
+                                    </form>
+                                    <form method="GET" action="{{ route('commandes.show', $commande->id) }}">
                                         @csrf   
                                         <button type="submit" class="btn-sm app-btn-secondary" style="margin-right: 5px; border-radius: 0;">Details</button>
-                                        </form>
+                                    </form>
                                 </td>
                             </tr>
                             @empty
                             <tr>
-                                <td class="cell" colspan="5">Aucun Commande ajouté</td>
+                                <td class="cell" colspan="5">Aucune commande ajoutée</td>
                             </tr>
                             @endforelse
                         </tbody>
@@ -92,7 +92,7 @@
         </div><!--//app-card-->
 
         <nav class="app-pagination">
-
+            {{ $commandes->links() }}
         </nav>
     </div><!--//tab-pane-->
 </div><!--//tab-content-->

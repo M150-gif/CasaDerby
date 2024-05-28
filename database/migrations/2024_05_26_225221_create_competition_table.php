@@ -11,12 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('panniers',function(Blueprint $table){
-            $table->id();
-            $table->unsignedBigInteger('client_id');
-            $table->foreign('client_id')->references('id')->on('clients'); 
-            $table->integer('totale_product');
-            $table->decimal('montant_totale', 8, 2);
+        Schema::create('competition', function (Blueprint $table) {
+            $table->id('id_competition');
+            $table->string('nom_competition', 150);
+            $table->integer('periode_competition');
             $table->timestamps();
         });
     }
@@ -26,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        //
+        Schema::dropIfExists('competition');
     }
 };
