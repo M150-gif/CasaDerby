@@ -305,7 +305,7 @@
     <ul class="nav-links">
       <li><a href="{{ url('/rca') }}">Acceuil</a></li>
       <li><a  href="{{ url('/rca/actualites') }}">Actualités</a></li>
-      <li><a href="">équipe</a></li>
+      <li><a href="{{ route('joueurs') }}">équipe</a></li>
       <li><a href="">Classement</a></li>
       <li><a href="">Matchs</a></li>
       <li><a href="{{ url('/rca/palmares') }}">Palmarès</a></li>

@@ -11,276 +11,6 @@
   <link href="{{ asset('css/swiper-bundle.min.css') }}" rel="stylesheet">
   <style>
   
-@media screen and (max-width: 768px) {
-
-  #content h1.content-header {
-    font-size: 25px;
-  }
-
-  #content p.content-para {
-    font-size: 13px;
-  }
-}
-
-@media (max-width: 480px) {
-    .logo img {
-        height: 40px; /* Ajustez selon votre besoin */
-    }
-
-    .read-more {
-        padding: 8px 15px;
-    }
-
-    .news-cards {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .news-card {
-        max-width: 90%;
-    }
-
-    .trophies-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-}
-
-
-
-#content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  height: 82vh; /* change to 92vh */
-  margin-top: -18vh; /* change to -8vh */
-  font-weight: bold;
-  font-family: monospace;
-  letter-spacing: 1px;
-}
-
-#content h1 {
-  text-transform: uppercase;
-  padding: 25px 25px 10px;
-  margin: 25px 25px 0;
-  font-size: 52px;
-}
-
-#content p {
-  font-size: 21px;
-}
-
-
-
-/*section3*/
-  .news-section {
-        max-width: 1200px;
-        margin: 0 auto;
-        text-align: center;
-  }
-
-    .news-section h2 {
-        margin-bottom: 20px;
-        font-size: 2em;
-        color: #BF953F;
-    }
-
-    .news-cards {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        gap: 20px;
-        padding: 30px
-    }
-.news-card {
-  background-color: #004d40;border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        overflow: hidden;
-        max-width: 300px;
-        text-align: center;
-        padding: 20px;
-    }
-
-    .news-card img {
-        max-width: 100px;
-        margin-bottom: 15px;
-    }
-
-    .news-card h3 {
-        margin-bottom: 10px;
-        font-size: 1.25em;
-        color: white;
-    }
-
-.news-card p {
-        margin-bottom: 15px;
-        color: rgb(209, 235, 217);
-    }
-
-    .read-more {
-        background-color: #004d40;
-        color: white;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-    }
-
-    .read-more:hover {
-        background-color: #00796b;
-    }
-
-/**/
-.main-content {
-    flex: 1;
-    
-}
-
-.trophies-section {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-    
-}
-
-.trophies-section h2 {
-    margin-bottom: 20px;
-    font-size: 2em;
-    color: #BF953F;
-}
-
-.trophies-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    padding-top: 30px;
-}
-
-.trophy-card {
-  background-color: #004d40;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    padding: 20px;
-    text-align: center;
-    
-}
-
-.trophy-card img {
-    max-width: 50px; /* Ajustez selon votre besoin */
-    margin-bottom: 15px;
-}
-
-.trophy-card h3 {
-    margin-bottom: 10px;
-    font-size: 1.25em;
-    color: white;
-}
-
-.trophy-card p {
-    margin-bottom: 15px;
-    color: white;
-}
-
-
-
-
-.trophies-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: auto;
-    gap: 20px;
-}
-
-.trophy-card {
-  background-color: #004d40;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    padding: 20px;
-    text-align: center;
-}
-
-.trophy-card h3 {
-    margin-bottom: 10px;
-    font-size: 1.25em;
-    color: white;
-}
-
-.trophy-card p {
-    margin-bottom: 15px;
-    color: wheat;
-}
-
-.history-section {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 20px;
-    margin: 0 auto;
-    max-width: 1200px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.history-content {
-    flex: 1;
-}
-
-.history-content h2 {
-    margin-bottom: 20px;
-    font-size: 2.5em;
-    background-color: #004d40;
-    font-family: 'Georgia', serif;
-}
-
-.history-content p {
-    margin-bottom: 15px;
-    line-height: 1.8;
-    font-size: 1.1em;
-}
-
-.history-image {
-    flex: 0 0 300px;
-    text-align: center;
-    padding: 10px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.history-image img {
-    max-width: 100%;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
-
-.history-image p {
-    font-size: 0.9em;
-    color: #666;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .history-section {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-    }
-
-    .history-image {
-        max-width: 100%;
-    }
-
-    .history-content h2 {
-        font-size: 2em;
-    }
-}
 
 
 
@@ -306,7 +36,7 @@
     <ul class="nav-links">
       <li><a href="{{ url('/rca') }}">Acceuil</a></li>
       <li><a  href="{{ url('/rca/actualites') }}">Actualités</a></li>
-      <li><a href="">équipe</a></li>
+      <li><a href="{{ url('/rca/joueurs') }}">équipe</a></li>
       <li><a href="">Classement</a></li>
       <li><a href="">Matchs</a></li>
       <li><a href="{{ url('/rca/palmares') }}">Palmarès</a></li>
@@ -315,6 +45,9 @@
     </nav>
   </header> 
   <br></br>
+  <br></br>
+  <br></br>
+  
 
   
 
@@ -333,7 +66,10 @@
                 </div>
                 <div class="face face2">
                     <div class="content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo voluptate et hic cum ratione a. Officia delectus illum perferendis maiores quia molestias vitae fugiat aspernatur alias corporis?</p>
+                        <h3>Date Naissance: 11-05-1989</h3>
+                        <h3>Nationnalité: Marocaine</h3>
+                        <h3>Poste: Gardien</h3>
+                        <h3>Taille: 189cm</h3>
                     </div>
                 </div>
             </div>
@@ -344,30 +80,36 @@
                         <img src="{{asset('images/rca/nawfel-zerhouni-e1695567143798-300x300.png')}}">
                     </div>
                     <div class="caption">
-                        <strong>49</strong> nawfel zerhouni
+                        <strong>11</strong> nawfel zerhouni
                     </div>
                 </div>
                 <div class="face face2">
-                    <div class="content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo voluptate et hic cum ratione a. Officia delectus illum perferendis maiores quia molestias vitae fugiat aspernatur alias corporis?</p>
-                    </div>
+                  <div class="content">
+                    <h3>Date Naissance: 11-05-1989</h3>
+                    <h3>Nationnalité: Marocaine</h3>
+                    <h3>Poste: Gardien</h3>
+                    <h3>Taille: 189cm</h3>
+                </div>
                 </div>
             </div>
             <div class="card">
                 <div class="face face1">
                     <div class="content">
-                        <img src="{{asset('images/rca/ANAS-ZNITI.png')}}" alt="">
+                        <img src="{{asset('images/rca/ABDELLAH-KHAFIFI--e1695573706350-300x300.png')}}" alt="">
                     </div>
                     <div class="caption">
-                        <strong>01</strong> Anas zniti
+                        <strong>05</strong> Abdellah Khafifi
                     </div>
                 </div>
                 <div class="face face2">
-                    <div class="content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo voluptate et hic cum ratione a. Officia delectus illum perferendis maiores quia molestias vitae fugiat aspernatur alias corporis?</p>
-                    </div>
+                  <div class="content">
+                    <h3>Date Naissance: 11-05-1989</h3>
+                    <h3>Nationnalité: Marocaine</h3>
+                    <h3>Poste: Gardien</h3>
+                    <h3>Taille: 189cm</h3>
                 </div>
-            </div
+                </div>
+              </div>
 
            
         </div>

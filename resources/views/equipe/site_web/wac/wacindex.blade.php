@@ -305,11 +305,11 @@
 
     <ul class="nav-links">
       <li><a href="{{ url('/wac') }}">Acceuil</a></li>
-      <li><a href="">Actualités</a></li>
+      <li><a href="{{ route('wacAct') }}">Actualités</a></li>
       <li><a href="">équipe</a></li>
       <li><a href="">Classement</a></li>
       <li><a href="">Matchs</a></li>
-      <li><a href="">Palmarès</a></li>
+      <li><a href="{{ route('wacpalmares') }}">Palmarès</a></li>
 
     </ul>
     </nav>

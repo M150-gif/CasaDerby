@@ -121,6 +121,15 @@ Route::middleware(['auth','admin_equipe_rca'])->group(function () {
 Route::get('/wac', function(){
     return view('equipe.site_web.wac.wacindex');
 });
+Route::get('/wac/palmares', function(){
+    return view('equipe.site_web.wac.wacpalmares');
+})->name('wacpalmares');
+Route::get('/wac/actualites', function(){
+    return view('equipe.site_web.wac.wacAct');
+})->name('wacAct');
+
+
+
 /*raja*/ 
 Route::get('/rca', function(){
     return view('equipe.site_web.rca.rcaindex');
@@ -133,4 +142,4 @@ Route::get('/rca/palmares', function(){
 });
 Route::get('/rca/joueurs', function(){
     return view('equipe.site_web.rca.rcajoueurs');
-});
+})->name('joueurs');
