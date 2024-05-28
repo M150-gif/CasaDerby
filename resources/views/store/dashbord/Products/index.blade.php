@@ -10,25 +10,7 @@
     </div>
     <div class="col-auto">
         <div class="page-utilities">
-            <div class="row g-2 justify-content-start justify-content-md-end align-items-center">
-                <div class="col-auto">
-                    <form class="table-search-form row gx-1 align-items-center">
-                        <div class="col-auto">
-                            <input type="text" id="search-Products" name="searchProducts" class="form-control search-Products" placeholder="Search">
-                        </div>
-                        <div class="col-auto">
-                            <button type="submit" class="btn app-btn-secondary">Search</button>
-                        </div>
-                    </form>
-                </div><!--//col-->
-                <div class="col-auto">
-                    <select class="form-select w-auto">
-                        <option selected value="option-1">All</option>
-                        <option value="option-2">This week</option>
-                        <option value="option-3">This month</option>
-                        <option value="option-4">Last 3 months</option>
-                    </select>
-                </div>
+            
                 <div class="col-auto">
                     <a class="btn app-btn-secondary" href="{{ route('products.create') }}">
                         Ajouter Porduct
