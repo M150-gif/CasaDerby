@@ -648,9 +648,9 @@
                                     <div class="col-lg-4 col-md-4">
                                         <div class="category-v2">
                                             <div class="category-v2-img">
-                                                <img src="https://placehold.co/549x434" alt="" />
+                                                <img  src="{{ asset('storage/' . $categories[1]->image_path) }}" alt="" />
                                             </div>
-                                            <h3><a href="shop-single.html" title="">Accessories</a></h3>
+                                            <h3><a href="shop-single.html" title="">{{$categories[1]->nom}}</a></h3>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-md-4">

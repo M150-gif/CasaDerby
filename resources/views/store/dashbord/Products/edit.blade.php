@@ -42,6 +42,13 @@
                             <span class="text-danger">{{ $message }}</span>
                         @enderror
                     </div>
+                    <div class="form-group">
+                <label for="image">Image</label>
+                <input type="file" name="image" id="image" class="form-control">
+                @error('image')
+                    <div id="emailHelp" class="form-text text-danger">{{ $message }}</div>
+                @enderror
+            </div>
                     <button type="submit" class="btn app-btn-primary">Mettre à jour</button>
                 </form>
             </div><!--//app-card-body-->

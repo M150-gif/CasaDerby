@@ -17,7 +17,7 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         // Créez 10 catégories
-        User::factory()->count(2)->create();
+        User::factory()->count(1)->create();
         // $categories = Categorie::factory()->count(10)->create();
 
         // // Créez 50 produits et assignez-les à des catégories existantes
