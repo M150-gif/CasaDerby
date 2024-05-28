@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\authentification;
+use App\Http\Controllers\casaderby;
 use App\Http\Controllers\Store\ClientCrudController;
 use App\Http\Controllers\Equipe\admin_equipe_wac;
 use App\Http\Controllers\Store\Admin_store;
@@ -104,13 +105,9 @@ Route::middleware(['auth','admin_equipe_rca'])->group(function () {
            })->name('afficher_list_equipe');
    });
 });
-
 //store(site web)//////////////////////////////////////////////////////////////
 // Route::middleware('auth')->group(function () {
-
-    Route::get('/casadebrystore', function(){
-        return view('store/site_web/index');
-    })->name('store_home');
+    Route::get('/casadebrystore',[casaderby::class,'get_categories'])->name('store_home');
 // });
 //equipe(site web)//////////////////////////////////////////////////////////////
 // Route::middleware('auth')->group(function () {

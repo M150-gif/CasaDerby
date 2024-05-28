@@ -35,6 +35,15 @@
                         <!-- Add more fields as needed -->
                     </tbody>
                 </table>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 rounded m-2">
+                    @if ($product->image_path)
+                        <img src="{{ asset('storage/' . $product->image_path) }}" class="card-img-top" alt="{{ $product->nom }}">
+                    @else
+                        <p>No image available for this category.</p>
+                    @endif
+                </div>
             </div><!--//table-responsive-->
         </div><!--//app-card-body-->
     </div><!--//app-card-->

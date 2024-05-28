@@ -5,6 +5,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Categorie;
 use Illuminate\Http\Request;
 use App\Models\Product;
+use Illuminate\Support\Facades\Storage;
 
 class Product_dashbord_controller extends Controller
 {
@@ -19,7 +20,6 @@ class Product_dashbord_controller extends Controller
         $Products = Product::all();
         return view('store.dashbord.Products.index',compact('Products',));
     }
-
     /**
      * Show the form for creating a new resource.
      */
@@ -31,19 +31,38 @@ class Product_dashbord_controller extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
-    {
-        $request->validate([
-            'nom' => 'required|string|max:255',
-            'quantite' => 'required|integer',
-            'description' => 'required|string',
-            'prix' => 'required|numeric',
-            'categorie_id' => 'required|exists:categories,id',
-        ]);
-        Product::create($request->all());
-
-        return redirect()->route('products.index')->with('success', 'Produit ajouté avec succès.');
-    }
+    
+     public function store(Request $request)
+     {
+         $request->validate([
+             'nom' => 'required|string|max:255',
+             'quantite' => 'required|integer',
+             'description' => 'required|string',
+             'prix' => 'required|numeric',
+             'categorie_id' => 'required|exists:categories,id',
+             'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+         ]);
+     
+         // Handle file upload
+         $path = null;
+         if ($request->hasFile('image')) {
+             $path = $request->file('image')->store('products', 'public');
+             Product::create([
+                'nom' => $request->nom,
+                'quantite' => $request->quantite,
+                'description' => $request->description,
+                'prix' => $request->prix,
+                'categorie_id' => $request->categorie_id,
+                'image_path'=>$path
+            ]);
+            return redirect()->route('products.index')->with('success', 'Produit ajouté avec succès.');
+         }
+     
+         // Create product with image path
+        
+     
+     }
+     
     /**
      * Display the specified resource.
      */
@@ -64,7 +83,7 @@ class Product_dashbord_controller extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Product $product)
+    public function update(Request $request, $id)
     {
         $request->validate([
             'nom' => 'required|string|max:255',
@@ -72,12 +91,33 @@ class Product_dashbord_controller extends Controller
             'description' => 'required|string',
             'prix' => 'required|numeric',
             'categorie_id' => 'required|exists:categories,id',
+            'image' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
-
-        $product->update($request->all());
-
+    
+        // Find the product by id
+        $product = Product::findOrFail($id);
+    
+        // Handle file upload
+        if ($request->hasFile('image')) {
+            // Delete the previous image if exists
+            Storage::disk('public')->delete($product->image_path);
+            
+            // Store the new image
+            $path = $request->file('image')->store('products', 'public');
+            $product->image_path = $path;
+        }
+    
+        // Update product details
+        $product->nom = $request->nom;
+        $product->quantite = $request->quantite;
+        $product->description = $request->description;
+        $product->prix = $request->prix;
+        $product->categorie_id = $request->categorie_id;
+        $product->save();
+    
         return redirect()->route('products.index')->with('success', 'Produit mis à jour avec succès.');
     }
+    
 
 
     /**

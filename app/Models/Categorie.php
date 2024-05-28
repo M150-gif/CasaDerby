@@ -9,6 +9,6 @@ class Categorie extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'nom',
+        'nom','image_path','id'
     ];
 }
