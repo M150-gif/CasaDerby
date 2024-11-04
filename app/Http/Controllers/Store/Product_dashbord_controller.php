@@ -32,36 +32,37 @@ class Product_dashbord_controller extends Controller
      * Store a newly created resource in storage.
      */
     
+
      public function store(Request $request)
-     {
-         $request->validate([
-             'nom' => 'required|string|max:255',
-             'quantite' => 'required|integer',
-             'description' => 'required|string',
-             'prix' => 'required|numeric',
-             'categorie_id' => 'required|exists:categories,id',
-             'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-         ]);
-     
-         // Handle file upload
-         $path = null;
-         if ($request->hasFile('image')) {
-             $path = $request->file('image')->store('products', 'public');
-             Product::create([
-                'nom' => $request->nom,
-                'quantite' => $request->quantite,
-                'description' => $request->description,
-                'prix' => $request->prix,
-                'categorie_id' => $request->categorie_id,
-                'image_path'=>$path
-            ]);
-            return redirect()->route('products.index')->with('success', 'Produit ajouté avec succès.');
-         }
-     
-         // Create product with image path
-        
-     
-     }
+          {
+              $request->validate([
+                  'nom' => 'required|string|max:255',
+                  'quantite' => 'required|integer',
+                  'description' => 'required|string',
+                  'prix' => 'required|numeric',
+                  'categorie_id' => 'required|exists:categories,id',
+                  'image_path' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+              ]);
+          
+              // Handle file upload
+              $path = null;
+              if ($request->hasFile('image')) {
+                  $path = $request->file('image')->store('products', 'public');
+                  Product::create([
+                     'nom' => $request->nom,
+                     'quantite' => $request->quantite,
+                     'description' => $request->description,
+                     'prix' => $request->prix,
+                     'categorie_id' => $request->categorie_id,
+                     'image_path'=>$path
+                 ]);
+                 return redirect()->route('products.index')->with('success', 'Produit ajouté avec succès.');
+              }
+          
+              // Create product with image path
+            
+          
+          }
      
     /**
      * Display the specified resource.
